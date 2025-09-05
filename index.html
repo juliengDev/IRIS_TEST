@@ -46,13 +46,20 @@
 
             <div
                 id="menu"
-                class="h-[667px] w-full bg-[url('/assets/hero_mobile.png')] bg-cover bg-center bg-no-repeat sm:bg-[url('/assets/hero_desktop.png')]"
+                class="h-[667px] w-full bg-[url('/assets/hero_mobile.png')] bg-cover bg-center bg-no-repeat lg:bg-[url('/assets/hero_desktop.png')]"
             >
                 <header
                     class="mb-[13.3125rem] flex items-center justify-between bg-transparent px-6 py-[1.125rem]"
                     role="banner"
                 >
                     <img src="/assets/logo.png" alt="Logo IRIS Center" />
+                    <ul class="hidden items-center gap-4 text-white lg:flex">
+                        <li>Nos centres sportifs</li>
+                        <li>Activités outdoor</li>
+                        <li>Cours et location</li>
+                        <li>Blog</li>
+                        <li>Formations pro.</li>
+                    </ul>
                     <div class="flex items-center gap-[18px]">
                         <button id="searchMenu-desktop" aria-label="Search">
                             <img
@@ -60,7 +67,11 @@
                                 alt="search icon"
                             />
                         </button>
-                        <button id="open-menu" aria-label="Open menu">
+                        <button
+                            class="lg:hidden"
+                            id="open-menu"
+                            aria-label="Open menu"
+                        >
                             <img
                                 src="/assets/menu_desktop.svg"
                                 alt="search icon"
@@ -69,12 +80,34 @@
                     </div>
                 </header>
                 <div class="flex flex-col items-center gap-1 text-white">
-                    <h1 class="text-[1.3125rem] font-medium">
+                    <h1
+                        class="text-[1.3125rem] font-medium lg:text-[2.1875rem]"
+                    >
                         Explorer les sports nautiques
                     </h1>
-                    <h2 class="text-[3.625rem] font-black uppercase">
-                        wing foil
-                    </h2>
+                    <div class="flex items-center gap-8">
+                        <button
+                            class="flex hidden items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white lg:block"
+                        >
+                            <img
+                                src="/assets/left-arrow.svg"
+                                alt="fleche de gauche"
+                            />
+                        </button>
+                        <h2
+                            class="text-[3.625rem] font-black tracking-[2%] uppercase lg:text-[7.3875rem]"
+                        >
+                            wing foil
+                        </h2>
+                        <button
+                            class="flex hidden items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white lg:block"
+                        >
+                            <img
+                                src="/assets/right-arrow.svg"
+                                alt="fleche de droite"
+                            />
+                        </button>
+                    </div>
                     <button
                         class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
                     >
@@ -219,7 +252,7 @@
             </div>
         </section>
         <footer
-            class="flex h-screen flex-col items-center bg-gradient-to-b from-[var(--color-pink)] to-[var(--color-purple)] px-[1.8125rem] py-[4.375rem] text-white"
+            class="flex flex-col items-center bg-gradient-to-b from-[var(--color-pink)] to-[var(--color-purple)] px-[1.8125rem] py-[4.375rem] text-white"
         >
             <img
                 class="mb-[2.125rem]"

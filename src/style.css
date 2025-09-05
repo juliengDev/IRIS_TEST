@@ -34,7 +34,7 @@
 @theme {
     --color-custom-purple: var(--color-purple);
     --color-custom-pink: var(--color-pink);
-    --breakpoint-custom-sm: 23.9375rem;
+    --breakpoint-xs: 23.9375rem;
 }
 
 /* FONTS */
