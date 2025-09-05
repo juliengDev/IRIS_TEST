@@ -9,83 +9,164 @@
         <title>Project Title</title>
     </head>
     <body>
-        <section>
-            <div
-                id="mobile-menu"
-                class="hidden min-h-screen bg-gradient-to-b from-[#D95681]/75 to-[#443383]/75"
-                role="dialog"
-                aria-modal="true"
-                aria-labelledby="mobile-menu-title"
-            >
-                <header class="flex items-center justify-between bg-white p-5">
-                    <img
-                        src="/assets/logo_mobile_colors.png"
-                        alt="Logo IRIS Center"
-                    />
-                    <div class="flex items-center gap-[18px]">
-                        <button id="searchMenu" aria-label="Search">
-                            <img src="/assets/search.svg" alt="search icon" />
-                        </button>
-                        <button id="close-menu" aria-label="Close menu">
-                            <img src="/assets/close.svg" alt="search icon" />
-                        </button>
-                    </div>
-                </header>
-                <div>
-                    <ul
-                        class="flex flex-col gap-[37px] px-5 py-[2.625rem] text-[1.4375rem] font-bold tracking-[1%] text-white"
-                    >
-                        <li>Nos centres sportifs</li>
-                        <li>Activités outdoor</li>
-                        <li>Cours et location</li>
-                        <li>Blog</li>
-                        <li>Formations pro.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div
-                id="menu"
-                class="h-[667px] w-full bg-[url('/assets/hero_mobile.png')] bg-cover bg-center bg-no-repeat lg:bg-[url('/assets/hero_desktop.png')]"
-            >
-                <header
-                    class="mb-[13.3125rem] flex items-center justify-between bg-transparent px-6 py-[1.125rem]"
-                    role="banner"
+        <main>
+            <section>
+                <div
+                    id="mobile-menu"
+                    class="hidden min-h-screen bg-gradient-to-b from-[#D95681]/75 to-[#443383]/75"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="mobile-menu-title"
                 >
-                    <img src="/assets/logo.png" alt="Logo IRIS Center" />
-                    <ul class="hidden items-center gap-4 text-white lg:flex">
-                        <li>Nos centres sportifs</li>
-                        <li>Activités outdoor</li>
-                        <li>Cours et location</li>
-                        <li>Blog</li>
-                        <li>Formations pro.</li>
-                    </ul>
-                    <div class="flex items-center gap-[18px]">
-                        <button id="searchMenu-desktop" aria-label="Search">
-                            <img
-                                src="/assets/search_desktop.svg"
-                                alt="search icon"
-                            />
-                        </button>
-                        <button
-                            class="lg:hidden"
-                            id="open-menu"
-                            aria-label="Open menu"
-                        >
-                            <img
-                                src="/assets/menu_desktop.svg"
-                                alt="search icon"
-                            />
-                        </button>
-                    </div>
-                </header>
-                <div class="flex flex-col items-center gap-1 text-white">
-                    <h1
-                        class="text-[1.3125rem] font-medium lg:text-[2.1875rem]"
+                    <header
+                        class="flex items-center justify-between bg-white p-5"
                     >
-                        Explorer les sports nautiques
-                    </h1>
-                    <div class="flex items-center gap-8">
+                        <img
+                            src="/assets/logo_mobile_colors.png"
+                            alt="Logo IRIS Center"
+                        />
+                        <div class="flex items-center gap-[18px]">
+                            <button id="searchMenu" aria-label="Search">
+                                <img
+                                    src="/assets/search.svg"
+                                    alt="search icon"
+                                />
+                            </button>
+                            <button id="close-menu" aria-label="Close menu">
+                                <img
+                                    src="/assets/close.svg"
+                                    alt="search icon"
+                                />
+                            </button>
+                        </div>
+                    </header>
+                    <div>
+                        <ul
+                            class="flex flex-col gap-[37px] px-5 py-[2.625rem] text-[1.4375rem] font-bold tracking-[1%] text-white"
+                        >
+                            <li>Nos centres sportifs</li>
+                            <li>Activités outdoor</li>
+                            <li>Cours et location</li>
+                            <li>Blog</li>
+                            <li>Formations pro.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    id="menu"
+                    class="h-[667px] w-full bg-[url('/assets/hero_mobile.png')] bg-cover bg-center bg-no-repeat lg:bg-[url('/assets/hero_desktop.png')]"
+                >
+                    <header
+                        class="mb-[13.3125rem] flex items-center justify-between bg-transparent px-6 py-[1.125rem]"
+                        role="banner"
+                    >
+                        <img src="/assets/logo.png" alt="Logo IRIS Center" />
+                        <ul
+                            class="hidden items-center gap-4 text-white lg:flex"
+                        >
+                            <li>Nos centres sportifs</li>
+                            <li>Activités outdoor</li>
+                            <li>Cours et location</li>
+                            <li>Blog</li>
+                            <li>Formations pro.</li>
+                        </ul>
+                        <div class="flex items-center gap-[18px]">
+                            <button id="searchMenu-desktop" aria-label="Search">
+                                <img
+                                    src="/assets/search_desktop.svg"
+                                    alt="search icon"
+                                />
+                            </button>
+                            <button
+                                class="lg:hidden"
+                                id="open-menu"
+                                aria-label="Open menu"
+                            >
+                                <img
+                                    src="/assets/menu_desktop.svg"
+                                    alt="search icon"
+                                />
+                            </button>
+                        </div>
+                    </header>
+                    <div class="flex flex-col items-center gap-1 text-white">
+                        <h1
+                            class="text-[1.3125rem] font-medium lg:text-[2.1875rem]"
+                        >
+                            Explorer les sports nautiques
+                        </h1>
+                        <div class="flex items-center gap-8">
+                            <button
+                                class="flex hidden items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white lg:block"
+                            >
+                                <img
+                                    src="/assets/left-arrow.svg"
+                                    alt="fleche de gauche"
+                                />
+                            </button>
+                            <h2
+                                class="text-[3.625rem] font-black tracking-[2%] uppercase lg:text-[7.3875rem]"
+                            >
+                                wing foil
+                            </h2>
+                            <button
+                                class="flex hidden items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white lg:block"
+                            >
+                                <img
+                                    src="/assets/right-arrow.svg"
+                                    alt="fleche de droite"
+                                />
+                            </button>
+                        </div>
+                        <button
+                            class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
+                        >
+                            <p class="text-[0.9375rem] font-bold">
+                                Réserver mon cours
+                            </p>
+                            <span>&#x2794;</span>
+                        </button>
+                        <img
+                            src="/assets/tabs_slider.png"
+                            alt="Sélection d'activités"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section
+                class="ml-[1.125rem] pt-[3.125rem] pb-[3.3125rem] lg:ml-[13.625rem] lg:pt-[10.625rem]"
+            >
+                <h2
+                    class="text-custom-purple mb-1 text-xl font-medium uppercase lg:text-[2.1875rem]"
+                >
+                    sports outdoor
+                </h2>
+                <div
+                    class="mb-3 flex flex-col lg:mb-4 lg:max-w-[1420px] lg:flex-row lg:items-center"
+                >
+                    <div class="lg:flex-1">
+                        <h3
+                            class="mb-2 bg-clip-text text-[2.5rem] font-black text-transparent uppercase lg:text-[4.6875rem] lg:leading-[80px] lg:tracking-[2%]"
+                            style="
+                                background-image: linear-gradient(
+                                    to right,
+                                    var(--color-custom-pink),
+                                    var(--color-custom-purple)
+                                );
+                            "
+                        >
+                            Nos activités
+                        </h3>
+                    </div>
+                    <p
+                        class="text-sm leading-[21px] font-medium lg:max-w-[44.6875rem] lg:flex-1 lg:pl-[30px] lg:text-lg lg:leading-[30px]"
+                    >
+                        Lorem ipsum dolor sit amet consectetur. Consequat
+                        volutpat in nisl elementum id. Donec cras nulla viverra
+                        sit tempus maecenas.
+                    </p>
+                    <div class="hidden gap-4 lg:ml-11 lg:flex lg:self-end">
                         <button
                             class="flex hidden items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white lg:block"
                         >
@@ -94,11 +175,6 @@
                                 alt="fleche de gauche"
                             />
                         </button>
-                        <h2
-                            class="text-[3.625rem] font-black tracking-[2%] uppercase lg:text-[7.3875rem]"
-                        >
-                            wing foil
-                        </h2>
                         <button
                             class="flex hidden items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white lg:block"
                         >
@@ -108,241 +184,217 @@
                             />
                         </button>
                     </div>
-                    <button
-                        class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
-                    >
-                        <p class="text-[0.9375rem] font-bold">
-                            Réserver mon cours
+                </div>
+                <div
+                    class="cards mb-[1.1875rem] flex gap-[10px] lg:mb-[2rem] lg:gap-[40px]"
+                >
+                    <div class="relative">
+                        <img
+                            class="h-[336px] w-[266px] lg:h-[532px] lg:w-[380px]"
+                            src="/assets/cards_wingFoil.png"
+                            alt="illustration de wing foil"
+                        />
+                        <p
+                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                        >
+                            Wing foil
                         </p>
-                        <span>&#x2794;</span>
-                    </button>
-                    <img
-                        src="/assets/tabs_slider.png"
-                        alt="Sélection d'activités"
-                    />
+                    </div>
+                    <div class="relative">
+                        <img
+                            class="h-[336px] w-[266px] lg:h-[532px] lg:w-[380px]"
+                            src="/assets/cards_windSurf.png"
+                            alt="illustration de wind surf"
+                        />
+                        <p
+                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                        >
+                            Wing surf
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <img
+                            class="h-[336px] w-[266px] lg:h-[532px] lg:w-[380px]"
+                            src="/assets/cards_voile.png"
+                            alt="illustration de voile"
+                        />
+                        <p
+                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                        >
+                            Voile
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <img
+                            class="h-[336px] w-[266px] lg:h-[532px] lg:w-[380px]"
+                            src="/assets/cards_canoe.png"
+                            alt="illustration de canoe"
+                        />
+                        <p
+                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                        >
+                            Canoe
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="ml-[1.125rem] pt-[3.125rem] pb-[3.3125rem]">
-            <div class="mb-3">
-                <h2
-                    class="text-custom-purple mb-1 text-xl font-medium uppercase"
-                >
-                    sports outdoor
-                </h2>
-                <h3
-                    class="mb-2 bg-clip-text text-[2.5rem] font-black text-transparent uppercase"
-                    style="
-                        background-image: linear-gradient(
-                            to right,
-                            var(--color-custom-pink),
-                            var(--color-custom-purple)
-                        );
-                    "
-                >
-                    Nos activités
-                </h3>
-                <p class="text-sm leading-[21px] font-medium">
-                    Lorem ipsum dolor sit amet consectetur. Consequat volutpat
-                    in nisl elementum id. Donec cras nulla viverra sit tempus
-                    maecenas.
-                </p>
-            </div>
-            <div class="cards mb-[1.1875rem] flex gap-[10px]">
-                <div class="relative">
-                    <img
-                        class="max-h-[336px] max-w-[266px]"
-                        src="/assets/cards_wingFoil.png"
-                        alt="illustration de wing foil"
-                    />
-                    <p
-                        class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                    >
-                        Wing foil
-                    </p>
-                </div>
-                <div class="relative">
-                    <img
-                        class="max-h-[336px] max-w-[266px]"
-                        src="/assets/cards_windSurf.png"
-                        alt="illustration de wind surf"
-                    />
-                    <p
-                        class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                    >
-                        Wing surf
-                    </p>
-                </div>
-                <div class="relative">
-                    <img
-                        class="max-h-[336px] max-w-[266px]"
-                        src="/assets/cards_voile.png"
-                        alt="illustration de voile"
-                    />
-                    <p
-                        class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                    >
-                        Voile
-                    </p>
-                </div>
-                <div class="relative">
-                    <img
-                        class="max-h-[336px] max-w-[266px]"
-                        src="/assets/cards_canoe.png"
-                        alt="illustration de canoe"
-                    />
-                    <p
-                        class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                    >
-                        Canoe
-                    </p>
-                </div>
-            </div>
-            <button
-                class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white"
-            >
-                <p class="text-[0.9375rem] font-bold">Découvrir le Pôle mer</p>
-                <span>&#x2794;</span>
-            </button>
-        </section>
-        <section
-            class="h-[631px] w-full bg-[url('/assets/base_activites.png')] bg-cover bg-center bg-no-repeat"
-        >
-            <div
-                class="ml-[1.125rem] flex flex-col items-center pt-[4.375rem] pb-[4.8125rem] text-white"
-            >
-                <h2
-                    class="mb-[1.9375rem] px-5 text-center text-[2.5rem] font-bold uppercase"
-                >
-                    nos bases d’activités
-                </h2>
-                <ul
-                    class="mb-[2.25rem] ml-auto flex w-[782px] gap-[33px] text-xl font-bold"
-                >
-                    <li class="underline underline-offset-6">
-                        Gruissan Pôle Mer
-                    </li>
-                    <li>Gruissan Pôle Étang</li>
-                    <li>Carry le Rouet</li>
-                    <li>Gorges de la Loue</li>
-                </ul>
-                <h3 class="mb-3 text-[1.3125rem] font-bold">
-                    Gruissan Pôle Mer
-                </h3>
-                <p class="mb-7 text-center text-[1.0625rem] leading-[24px]">
-                    Lorem ipsum dolor sit amet consectetur. Consequat volutpat
-                    in nisl elementum id. Donec cras nulla viverra sit tempus
-                    maecenas vehicula lacus. Egestas est cursus in sit
-                    pellentesque. Sit sem tristique habitasse tempus feugiat et.
-                </p>
                 <button
-                    class="mb-3 flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
+                    class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white"
                 >
                     <p class="text-[0.9375rem] font-bold">
                         Découvrir le Pôle mer
                     </p>
                     <span>&#x2794;</span>
                 </button>
-                <button
-                    class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] border border-[2px] bg-transparent px-5 py-[10px] text-white"
+            </section>
+            <section
+                class="h-[631px] w-full bg-[url('/assets/base_activites.png')] bg-cover bg-center bg-no-repeat"
+            >
+                <div
+                    class="ml-[1.125rem] flex flex-col items-center pt-[4.375rem] pb-[4.8125rem] text-white"
                 >
-                    <p class="text-[0.9375rem] font-bold">Voir sur la carte</p>
-                    <span>&#x2794;</span>
-                </button>
-            </div>
-        </section>
-        <footer
-            class="flex flex-col items-center bg-gradient-to-b from-[var(--color-pink)] to-[var(--color-purple)] px-[1.8125rem] py-[4.375rem] text-white"
-        >
-            <img
-                class="mb-[2.125rem]"
-                src="/assets/footer_logo.png"
-                alt="logo IRIS"
-            />
-            <div class="mb-2 flex flex-col items-center">
-                <p class="mb-2 text-[1.1875rem] leading-[28px] font-bold">
-                    IRIS centers
-                </p>
+                    <h2
+                        class="mb-[1.9375rem] px-5 text-center text-[2.5rem] font-bold uppercase"
+                    >
+                        nos bases d’activités
+                    </h2>
+                    <ul
+                        class="mb-[2.25rem] ml-auto flex w-[782px] gap-[33px] text-xl font-bold"
+                    >
+                        <li class="underline underline-offset-6">
+                            Gruissan Pôle Mer
+                        </li>
+                        <li>Gruissan Pôle Étang</li>
+                        <li>Carry le Rouet</li>
+                        <li>Gorges de la Loue</li>
+                    </ul>
+                    <h3 class="mb-3 text-[1.3125rem] font-bold">
+                        Gruissan Pôle Mer
+                    </h3>
+                    <p class="mb-7 text-center text-[1.0625rem] leading-[24px]">
+                        Lorem ipsum dolor sit amet consectetur. Consequat
+                        volutpat in nisl elementum id. Donec cras nulla viverra
+                        sit tempus maecenas vehicula lacus. Egestas est cursus
+                        in sit pellentesque. Sit sem tristique habitasse tempus
+                        feugiat et.
+                    </p>
+                    <button
+                        class="mb-3 flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
+                    >
+                        <p class="text-[0.9375rem] font-bold">
+                            Découvrir le Pôle mer
+                        </p>
+                        <span>&#x2794;</span>
+                    </button>
+                    <button
+                        class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] border border-[2px] bg-transparent px-5 py-[10px] text-white"
+                    >
+                        <p class="text-[0.9375rem] font-bold">
+                            Voir sur la carte
+                        </p>
+                        <span>&#x2794;</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div
+                class="flex flex-col items-center bg-gradient-to-b from-[var(--color-pink)] to-[var(--color-purple)] px-[1.8125rem] py-[4.375rem] text-white"
+            >
                 <img
-                    class="h-[22px] w-[17px]"
-                    src="/assets/location-icon.svg"
-                    alt="icon localisaton"
+                    class="mb-[2.125rem]"
+                    src="/assets/footer_logo.png"
+                    alt="logo IRIS"
                 />
-                <div class="flex flex-col items-center text-base font-semibold">
-                    <p>4 rue du PNDF</p>
-                    <p>43000 Le Puy-en-Velay</p>
+                <div class="mb-2 flex flex-col items-center">
+                    <p class="mb-2 text-[1.1875rem] leading-[28px] font-bold">
+                        IRIS centers
+                    </p>
                     <img
                         class="h-[22px] w-[17px]"
-                        src="/assets/phone-icon.svg"
+                        src="/assets/location-icon.svg"
                         alt="icon localisaton"
                     />
-                    <p>04 00 00 00 00</p>
-                </div>
-            </div>
-            <button
-                class="mb-[2.4375rem] flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
-            >
-                <p class="text-[0.9375rem] font-bold">Nous contacter</p>
-                <span>&#x2794;</span>
-            </button>
-            <div class="mb-[1.8125rem]">
-                <h4 class="mb-1 text-lg leading-[28px] font-bold">
-                    Groupe IRIS
-                </h4>
-                <ul class="text-center text-base">
-                    <li>IRIS voyage</li>
-                    <li>IRIS events</li>
-                    <li>IRIS Academy</li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="mb-2 text-lg leading-[28px] font-bold">
-                    Rejoignez-nous sur les réseaux
-                </h5>
-                <div class="mb-[1.9375rem] flex justify-center gap-[13px]">
-                    <a
-                        href="https://www.facebook.com/IRIS.Interactive"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <div
+                        class="flex flex-col items-center text-base font-semibold"
                     >
+                        <p>4 rue du PNDF</p>
+                        <p>43000 Le Puy-en-Velay</p>
                         <img
-                            src="/assets/facebook.svg"
-                            alt="icon de lien facebook"
+                            class="h-[22px] w-[17px]"
+                            src="/assets/phone-icon.svg"
+                            alt="icon localisaton"
                         />
-                    </a>
-                    <a
-                        href="https://www.instagram.com/iris_interactive"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img
-                            src="/assets/instagram.svg"
-                            alt="icon de lien instagram"
-                        />
-                    </a>
+                        <p>04 00 00 00 00</p>
+                    </div>
                 </div>
-            </div>
-            <div class="mb-[3.375rem] flex flex-col items-center">
-                <h5 class="mb-2 text-lg leading-[28px] font-bold">
-                    Qui sommes nous ?
-                </h5>
-                <p class="text-center">
-                    Lorem ipsum dolor sit amet consectetur. Mauris et faucibus
-                    sed vulputate nulla ut eget urna.
-                </p>
-            </div>
-            <div class="flex flex-col items-center gap-4">
-                <p class="text-center">
-                    Plan du site - CGV - Politique de confidentialité -Mentions
-                    légales - Made with<span class="inline-block px-1"
-                        ><img src="/assets/heart.svg" alt="icon coeur" /></span
-                    >by IRIS Interactive
-                </p>
-                <p class="text-center">
-                    Ce site est protégé par reCAPTCHA. Les règles de
-                    confidentialité et les conditions d'utilisation de Google
-                    s'appliquent.
-                </p>
+                <button
+                    class="mb-[2.4375rem] flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
+                >
+                    <p class="text-[0.9375rem] font-bold">Nous contacter</p>
+                    <span>&#x2794;</span>
+                </button>
+                <div class="mb-[1.8125rem]">
+                    <h4 class="mb-1 text-lg leading-[28px] font-bold">
+                        Groupe IRIS
+                    </h4>
+                    <ul class="text-center text-base">
+                        <li>IRIS voyage</li>
+                        <li>IRIS events</li>
+                        <li>IRIS Academy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="mb-2 text-lg leading-[28px] font-bold">
+                        Rejoignez-nous sur les réseaux
+                    </h5>
+                    <div class="mb-[1.9375rem] flex justify-center gap-[13px]">
+                        <a
+                            href="https://www.facebook.com/IRIS.Interactive"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="/assets/facebook.svg"
+                                alt="icon de lien facebook"
+                            />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/iris_interactive"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="/assets/instagram.svg"
+                                alt="icon de lien instagram"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="mb-[3.375rem] flex flex-col items-center">
+                    <h5 class="mb-2 text-lg leading-[28px] font-bold">
+                        Qui sommes nous ?
+                    </h5>
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet consectetur. Mauris et
+                        faucibus sed vulputate nulla ut eget urna.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center gap-4">
+                    <p class="text-center">
+                        Plan du site - CGV - Politique de confidentialité
+                        -Mentions légales - Made with<span
+                            class="inline-block px-1"
+                            ><img
+                                src="/assets/heart.svg"
+                                alt="icon coeur" /></span
+                        >by IRIS Interactive
+                    </p>
+                    <p class="text-center">
+                        Ce site est protégé par reCAPTCHA. Les règles de
+                        confidentialité et les conditions d'utilisation de
+                        Google s'appliquent.
+                    </p>
+                </div>
             </div>
         </footer>
         <script type="module" src="src/main.ts"></script>
