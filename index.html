@@ -9,85 +9,184 @@
         <title>Project Title</title>
     </head>
     <body>
-        <div
-            id="mobile-menu"
-            class="hidden min-h-screen bg-gradient-to-b from-[#D95681]/75 to-[#443383]/75"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="mobile-menu-title"
-        >
-            <header class="flex items-center justify-between bg-white p-5">
-                <img
-                    src="./public/assets/logo_mobile_colors.png"
-                    alt="Logo IRIS Center"
-                />
-                <div class="flex items-center gap-[18px]">
-                    <button id="searchMenu" aria-label="Search">
-                        <img
-                            src="./public/assets/search.svg"
-                            alt="search icon"
-                        />
-                    </button>
-                    <button id="close-menu" aria-label="Close menu">
-                        <img
-                            src="./public/assets/close.svg"
-                            alt="search icon"
-                        />
-                    </button>
-                </div>
-            </header>
-            <div>
-                <ul
-                    class="flex flex-col gap-[37px] px-5 py-[2.625rem] text-[1.4375rem] font-bold tracking-[1%] text-white"
-                >
-                    <li>Nos centres sportifs</li>
-                    <li>Activités outdoor</li>
-                    <li>Cours et location</li>
-                    <li>Blog</li>
-                    <li>Formations pro.</li>
-                </ul>
-            </div>
-        </div>
-        <div
-            id="menu"
-            class="cover h-[667px] w-full bg-[url('/assets/hero_mobile.png')] bg-top bg-no-repeat sm:h-[900px] md:bg-[url('/assets/hero_desktop.png')]"
-        >
-            <header
-                class="mb-[13.3125rem] flex items-center justify-between bg-transparent px-6 py-[1.125rem]"
-                role="banner"
+        <section>
+            <div
+                id="mobile-menu"
+                class="hidden min-h-screen bg-gradient-to-b from-[#D95681]/75 to-[#443383]/75"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="mobile-menu-title"
             >
-                <img src="./public/assets/logo.png" alt="Logo IRIS Center" />
-                <div class="flex items-center gap-[18px]">
-                    <button id="searchMenu-desktop" aria-label="Search">
-                        <img
-                            src="./public/assets/search_desktop.svg"
-                            alt="search icon"
-                        />
-                    </button>
-                    <button id="open-menu" aria-label="Open menu">
-                        <img
-                            src="./public/assets/menu_desktop.svg"
-                            alt="search icon"
-                        />
-                    </button>
+                <header class="flex items-center justify-between bg-white p-5">
+                    <img
+                        src="./public/assets/logo_mobile_colors.png"
+                        alt="Logo IRIS Center"
+                    />
+                    <div class="flex items-center gap-[18px]">
+                        <button id="searchMenu" aria-label="Search">
+                            <img
+                                src="./public/assets/search.svg"
+                                alt="search icon"
+                            />
+                        </button>
+                        <button id="close-menu" aria-label="Close menu">
+                            <img
+                                src="./public/assets/close.svg"
+                                alt="search icon"
+                            />
+                        </button>
+                    </div>
+                </header>
+                <div>
+                    <ul
+                        class="flex flex-col gap-[37px] px-5 py-[2.625rem] text-[1.4375rem] font-bold tracking-[1%] text-white"
+                    >
+                        <li>Nos centres sportifs</li>
+                        <li>Activités outdoor</li>
+                        <li>Cours et location</li>
+                        <li>Blog</li>
+                        <li>Formations pro.</li>
+                    </ul>
                 </div>
-            </header>
-            <div class="flex flex-col items-center gap-1 text-white">
-                <h1 class="text-[1.3125rem] font-medium">
-                    Explorer les sports nautiques
-                </h1>
-                <h2 class="text-[3.625rem] font-black uppercase">wing foil</h2>
-                <button
-                    class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
+            </div>
+
+            <div
+                id="menu"
+                class="h-[667px] w-full bg-[url('/assets/hero_mobile.png')] bg-cover bg-center bg-no-repeat sm:bg-[url('/assets/hero_desktop.png')]"
+            >
+                <header
+                    class="mb-[13.3125rem] flex items-center justify-between bg-transparent px-6 py-[1.125rem]"
+                    role="banner"
                 >
-                    <p class="text-[0.9375rem] font-bold">Réserver mon cours</p>
+                    <img
+                        src="./public/assets/logo.png"
+                        alt="Logo IRIS Center"
+                    />
+                    <div class="flex items-center gap-[18px]">
+                        <button id="searchMenu-desktop" aria-label="Search">
+                            <img
+                                src="./public/assets/search_desktop.svg"
+                                alt="search icon"
+                            />
+                        </button>
+                        <button id="open-menu" aria-label="Open menu">
+                            <img
+                                src="./public/assets/menu_desktop.svg"
+                                alt="search icon"
+                            />
+                        </button>
+                    </div>
+                </header>
+                <div class="flex flex-col items-center gap-1 text-white">
+                    <h1 class="text-[1.3125rem] font-medium">
+                        Explorer les sports nautiques
+                    </h1>
+                    <h2 class="text-[3.625rem] font-black uppercase">
+                        wing foil
+                    </h2>
+                    <button
+                        class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
+                    >
+                        <p class="text-[0.9375rem] font-bold">
+                            Réserver mon cours
+                        </p>
+                        <span>&#x2794;</span>
+                    </button>
+                    <img
+                        src="./public/assets/tabs_slider.png"
+                        alt="Sélection d'activités"
+                    />
+                </div>
+            </div>
+        </section>
+        <main>
+            <section class="ml-[1.125rem] pt-[3.125rem] pb-[3.3125rem]">
+                <div class="mb-3">
+                    <h2
+                        class="text-custom-purple mb-1 text-xl font-medium uppercase"
+                    >
+                        sports outdoor
+                    </h2>
+                    <h3
+                        class="mb-2 bg-clip-text text-[2.5rem] font-black text-transparent uppercase"
+                        style="
+                            background-image: linear-gradient(
+                                to right,
+                                var(--color-custom-cyan),
+                                var(--color-custom-purple)
+                            );
+                        "
+                    >
+                        Nos activités
+                    </h3>
+                    <p class="text-sm leading-[21px] font-medium">
+                        Lorem ipsum dolor sit amet consectetur. Consequat
+                        volutpat in nisl elementum id. Donec cras nulla viverra
+                        sit tempus maecenas.
+                    </p>
+                </div>
+                <div class="cards mb-[1.1875rem] flex gap-[10px]">
+                    <div class="relative">
+                        <img
+                            class="max-h-[336px] max-w-[266px]"
+                            src="./public/assets/cards_wingFoil.png"
+                            alt="illustration de wing foil"
+                        />
+                        <p
+                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                        >
+                            Wing foil
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <img
+                            class="max-h-[336px] max-w-[266px]"
+                            src="./public/assets/cards_windSurf.png"
+                            alt="illustration de wind surf"
+                        />
+                        <p
+                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                        >
+                            Wing surf
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <img
+                            class="max-h-[336px] max-w-[266px]"
+                            src="./public/assets/cards_voile.png"
+                            alt="illustration de voile"
+                        />
+                        <p
+                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                        >
+                            Voile
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <img
+                            class="max-h-[336px] max-w-[266px]"
+                            src="./public/assets/cards_canoe.png"
+                            alt="illustration de canoe"
+                        />
+                        <p
+                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                        >
+                            Canoe
+                        </p>
+                    </div>
+                </div>
+                <button
+                    class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-gradient-to-r from-[#D95681] to-[#443383] px-5 py-[10px] text-white"
+                >
+                    <p class="text-[0.9375rem] font-bold">
+                        Découvrir le Pôle mer
+                    </p>
                     <span>&#x2794;</span>
                 </button>
-                <img
-                    src="./public/assets/tabs_slider.png"
-                    alt="Sélection d'activités"
-                />
-            </div>
-        </div>
+            </section>
+            <section>
+                
+            </section>
+        </main>
     </body>
 </html>

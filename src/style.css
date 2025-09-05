@@ -29,11 +29,15 @@
     --letter-spacing-preset-5-bold: 0px;
     --letter-spacing-preset-5: 0px;
     --letter-spacing-preset-6: 0px;
+
+
+   
 }
 
 @theme {
     --color-custom-purple: var(--color-purple);
     --color-custom-cyan: var(--color-pink);
+    --breakpoint-custom-sm: 23.9375rem;
 }
 
 /* FONTS */
@@ -116,6 +120,7 @@
         font-weight: bold;
     }
 }
+
 
 /** 
 
