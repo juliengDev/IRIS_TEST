@@ -188,21 +188,23 @@
                 <div
                     class="cards mb-[1.1875rem] flex gap-[10px] lg:mb-[2rem] lg:gap-[40px]"
                 >
-                    <div class="relative">
+                    <div
+                        class="relative aspect-[266/336] w-[266px] overflow-hidden lg:aspect-[380/532] lg:w-[380px]"
+                    >
                         <img
-                            class="h-[336px] w-[266px] lg:h-[532px] lg:w-[380px]"
                             src="/assets/cards_wingFoil.png"
-                            alt="illustration de wing foil"
+                            alt="illustration de wind surf"
                         />
                         <p
                             class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
                         >
-                            Wing foil
+                            Wing Foil
                         </p>
                     </div>
-                    <div class="relative">
+                    <div
+                        class="relative aspect-[266/336] w-[266px] overflow-hidden lg:aspect-[380/532] lg:w-[380px]"
+                    >
                         <img
-                            class="h-[336px] w-[266px] lg:h-[532px] lg:w-[380px]"
                             src="/assets/cards_windSurf.png"
                             alt="illustration de wind surf"
                         />
@@ -212,9 +214,10 @@
                             Wing surf
                         </p>
                     </div>
-                    <div class="relative">
+                    <div
+                        class="relative aspect-[266/336] w-[266px] overflow-hidden lg:aspect-[380/532] lg:w-[380px]"
+                    >
                         <img
-                            class="h-[336px] w-[266px] lg:h-[532px] lg:w-[380px]"
                             src="/assets/cards_voile.png"
                             alt="illustration de voile"
                         />
@@ -224,9 +227,10 @@
                             Voile
                         </p>
                     </div>
-                    <div class="relative">
+                    <div
+                        class="relative aspect-[266/336] w-[266px] overflow-hidden lg:aspect-[380/532] lg:w-[380px]"
+                    >
                         <img
-                            class="h-[336px] w-[266px] lg:h-[532px] lg:w-[380px]"
                             src="/assets/cards_canoe.png"
                             alt="illustration de canoe"
                         />
@@ -311,83 +315,115 @@
                 class="flex flex-col items-center bg-gradient-to-b from-[var(--color-pink)] to-[var(--color-purple)] px-[1.8125rem] py-[4.375rem] text-white"
             >
                 <img
-                    class="mb-[2.125rem]"
+                    class="mb-[2.125rem] lg:mb-[3.375rem]"
                     src="/assets/footer_logo.png"
                     alt="logo IRIS"
                 />
-                <div class="mb-2 flex flex-col items-center">
-                    <p class="mb-2 text-[1.1875rem] leading-[28px] font-bold">
-                        IRIS centers
-                    </p>
-                    <img
-                        class="h-[22px] w-[17px]"
-                        src="/assets/location-icon.svg"
-                        alt="icon localisaton"
-                    />
-                    <div
-                        class="flex flex-col items-center text-base font-semibold"
-                    >
-                        <p>4 rue du PNDF</p>
-                        <p>43000 Le Puy-en-Velay</p>
-                        <img
-                            class="h-[22px] w-[17px]"
-                            src="/assets/phone-icon.svg"
-                            alt="icon localisaton"
-                        />
-                        <p>04 00 00 00 00</p>
-                    </div>
-                </div>
-                <button
-                    class="mb-[2.4375rem] flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
+                <div
+                    class="lg:mb-[6.5rem] lg:flex lg:w-full lg:items-start lg:justify-center lg:gap-[85px]"
                 >
-                    <p class="text-[0.9375rem] font-bold">Nous contacter</p>
-                    <span>&#x2794;</span>
-                </button>
-                <div class="mb-[1.8125rem]">
-                    <h4 class="mb-1 text-lg leading-[28px] font-bold">
-                        Groupe IRIS
-                    </h4>
-                    <ul class="text-center text-base">
-                        <li>IRIS voyage</li>
-                        <li>IRIS events</li>
-                        <li>IRIS Academy</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5 class="mb-2 text-lg leading-[28px] font-bold">
-                        Rejoignez-nous sur les réseaux
-                    </h5>
-                    <div class="mb-[1.9375rem] flex justify-center gap-[13px]">
-                        <a
-                            href="https://www.facebook.com/IRIS.Interactive"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                    <div class="flex flex-col items-center lg:items-start">
+                        <div
+                            class="mb-2 flex flex-col items-center lg:items-start"
                         >
-                            <img
-                                src="/assets/facebook.svg"
-                                alt="icon de lien facebook"
-                            />
-                        </a>
-                        <a
-                            href="https://www.instagram.com/iris_interactive"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            <p
+                                class="mb-2 text-[1.1875rem] leading-[28px] font-bold"
+                            >
+                                IRIS centers
+                            </p>
+
+                            <div
+                                class="flex flex-col items-center text-base font-semibold lg:items-start"
+                            >
+                                <div
+                                    class="flex flex-col items-center lg:flex-row lg:gap-2"
+                                >
+                                    <img
+                                        class="h-[22px] w-[17px] self-start"
+                                        src="/assets/location-icon.svg"
+                                        alt="icon localisaton"
+                                    />
+                                    <div class="lg:mb-[0,9375rem]">
+                                        <p>4 rue du PNDF</p>
+                                        <p>43000 Le Puy-en-Velay</p>
+                                    </div>
+                                </div>
+                                <div class="lg:mb-[0,9375rem] lg:flex lg:gap-2">
+                                    <img
+                                        class="h-[22px] w-[17px]"
+                                        src="/assets/phone-icon.svg"
+                                        alt="icon localisaton"
+                                    />
+
+                                    <p>04 00 00 00 00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="mb-[2.4375rem] flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
                         >
-                            <img
-                                src="/assets/instagram.svg"
-                                alt="icon de lien instagram"
-                            />
-                        </a>
+                            <p class="text-[0.9375rem] font-bold">
+                                Nous contacter
+                            </p>
+                            <span>&#x2794;</span>
+                        </button>
                     </div>
-                </div>
-                <div class="mb-[3.375rem] flex flex-col items-center">
-                    <h5 class="mb-2 text-lg leading-[28px] font-bold">
-                        Qui sommes nous ?
-                    </h5>
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet consectetur. Mauris et
-                        faucibus sed vulputate nulla ut eget urna.
-                    </p>
+                    <div class="mb-[1.8125rem]">
+                        <h4
+                            class="mb-1 text-center text-lg leading-[28px] font-bold"
+                        >
+                            Groupe IRIS
+                        </h4>
+                        <ul class="text-center text-base lg:text-start">
+                            <li>IRIS voyage</li>
+                            <li>IRIS events</li>
+                            <li>IRIS Academy</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="lg:flex lg:max-w-[11.875rem] lg:flex-col lg:items-start"
+                    >
+                        <h5
+                            class="mb-2 text-center text-lg leading-[28px] font-bold lg:text-start"
+                        >
+                            Rejoignez-nous sur les réseaux
+                        </h5>
+                        <div
+                            class="mb-[1.9375rem] flex justify-center gap-[13px]"
+                        >
+                            <a
+                                href="https://www.facebook.com/IRIS.Interactive"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="/assets/facebook.svg"
+                                    alt="icon de lien facebook"
+                                />
+                            </a>
+                            <a
+                                href="https://www.instagram.com/iris_interactive"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="/assets/instagram.svg"
+                                    alt="icon de lien instagram"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="mb-[3.375rem] flex flex-col items-center lg:max-w-[13.125rem] lg:items-start"
+                    >
+                        <h5 class="mb-2 text-lg leading-[28px] font-bold">
+                            Qui sommes nous ?
+                        </h5>
+                        <p class="text-center lg:text-start">
+                            Lorem ipsum dolor sit amet consectetur. Mauris et
+                            faucibus sed vulputate nulla ut eget urna.
+                        </p>
+                    </div>
                 </div>
                 <div class="flex flex-col items-center gap-4">
                     <p class="text-center">
@@ -397,7 +433,16 @@
                             ><img
                                 src="/assets/heart.svg"
                                 alt="icon coeur" /></span
-                        >by IRIS Interactive
+                        >by
+                        <a
+                            class="hover:text-dark transition-all duration-300 hover:scale-105 hover:underline"
+                            href="https://juliengilbert.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Julien Gilbert
+                        </a>
+                        for IRIS Interactive
                     </p>
                     <p class="text-center">
                         Ce site est protégé par reCAPTCHA. Les règles de
