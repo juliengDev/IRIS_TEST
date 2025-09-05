@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="vite.svg" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="job test" />
-        <script type="module" src="src/main.ts" defer></script>
+        <link rel="stylesheet" href="/src/style.css" />
         <title>Project Title</title>
     </head>
     <body>
@@ -19,21 +19,15 @@
             >
                 <header class="flex items-center justify-between bg-white p-5">
                     <img
-                        src="./public/assets/logo_mobile_colors.png"
+                        src="/assets/logo_mobile_colors.png"
                         alt="Logo IRIS Center"
                     />
                     <div class="flex items-center gap-[18px]">
                         <button id="searchMenu" aria-label="Search">
-                            <img
-                                src="./public/assets/search.svg"
-                                alt="search icon"
-                            />
+                            <img src="/assets/search.svg" alt="search icon" />
                         </button>
                         <button id="close-menu" aria-label="Close menu">
-                            <img
-                                src="./public/assets/close.svg"
-                                alt="search icon"
-                            />
+                            <img src="/assets/close.svg" alt="search icon" />
                         </button>
                     </div>
                 </header>
@@ -58,20 +52,17 @@
                     class="mb-[13.3125rem] flex items-center justify-between bg-transparent px-6 py-[1.125rem]"
                     role="banner"
                 >
-                    <img
-                        src="./public/assets/logo.png"
-                        alt="Logo IRIS Center"
-                    />
+                    <img src="/assets/logo.png" alt="Logo IRIS Center" />
                     <div class="flex items-center gap-[18px]">
                         <button id="searchMenu-desktop" aria-label="Search">
                             <img
-                                src="./public/assets/search_desktop.svg"
+                                src="/assets/search_desktop.svg"
                                 alt="search icon"
                             />
                         </button>
                         <button id="open-menu" aria-label="Open menu">
                             <img
-                                src="./public/assets/menu_desktop.svg"
+                                src="/assets/menu_desktop.svg"
                                 alt="search icon"
                             />
                         </button>
@@ -93,100 +84,143 @@
                         <span>&#x2794;</span>
                     </button>
                     <img
-                        src="./public/assets/tabs_slider.png"
+                        src="/assets/tabs_slider.png"
                         alt="Sélection d'activités"
                     />
                 </div>
             </div>
         </section>
-        <main>
-            <section class="ml-[1.125rem] pt-[3.125rem] pb-[3.3125rem]">
-                <div class="mb-3">
-                    <h2
-                        class="text-custom-purple mb-1 text-xl font-medium uppercase"
+        <section class="ml-[1.125rem] pt-[3.125rem] pb-[3.3125rem]">
+            <div class="mb-3">
+                <h2
+                    class="text-custom-purple mb-1 text-xl font-medium uppercase"
+                >
+                    sports outdoor
+                </h2>
+                <h3
+                    class="mb-2 bg-clip-text text-[2.5rem] font-black text-transparent uppercase"
+                    style="
+                        background-image: linear-gradient(
+                            to right,
+                            var(--color-custom-pink),
+                            var(--color-custom-purple)
+                        );
+                    "
+                >
+                    Nos activités
+                </h3>
+                <p class="text-sm leading-[21px] font-medium">
+                    Lorem ipsum dolor sit amet consectetur. Consequat volutpat
+                    in nisl elementum id. Donec cras nulla viverra sit tempus
+                    maecenas.
+                </p>
+            </div>
+            <div class="cards mb-[1.1875rem] flex gap-[10px]">
+                <div class="relative">
+                    <img
+                        class="max-h-[336px] max-w-[266px]"
+                        src="/assets/cards_wingFoil.png"
+                        alt="illustration de wing foil"
+                    />
+                    <p
+                        class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
                     >
-                        sports outdoor
-                    </h2>
-                    <h3
-                        class="mb-2 bg-clip-text text-[2.5rem] font-black text-transparent uppercase"
-                        style="
-                            background-image: linear-gradient(
-                                to right,
-                                var(--color-custom-cyan),
-                                var(--color-custom-purple)
-                            );
-                        "
-                    >
-                        Nos activités
-                    </h3>
-                    <p class="text-sm leading-[21px] font-medium">
-                        Lorem ipsum dolor sit amet consectetur. Consequat
-                        volutpat in nisl elementum id. Donec cras nulla viverra
-                        sit tempus maecenas.
+                        Wing foil
                     </p>
                 </div>
-                <div class="cards mb-[1.1875rem] flex gap-[10px]">
-                    <div class="relative">
-                        <img
-                            class="max-h-[336px] max-w-[266px]"
-                            src="./public/assets/cards_wingFoil.png"
-                            alt="illustration de wing foil"
-                        />
-                        <p
-                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                        >
-                            Wing foil
-                        </p>
-                    </div>
-                    <div class="relative">
-                        <img
-                            class="max-h-[336px] max-w-[266px]"
-                            src="./public/assets/cards_windSurf.png"
-                            alt="illustration de wind surf"
-                        />
-                        <p
-                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                        >
-                            Wing surf
-                        </p>
-                    </div>
-                    <div class="relative">
-                        <img
-                            class="max-h-[336px] max-w-[266px]"
-                            src="./public/assets/cards_voile.png"
-                            alt="illustration de voile"
-                        />
-                        <p
-                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                        >
-                            Voile
-                        </p>
-                    </div>
-                    <div class="relative">
-                        <img
-                            class="max-h-[336px] max-w-[266px]"
-                            src="./public/assets/cards_canoe.png"
-                            alt="illustration de canoe"
-                        />
-                        <p
-                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                        >
-                            Canoe
-                        </p>
-                    </div>
+                <div class="relative">
+                    <img
+                        class="max-h-[336px] max-w-[266px]"
+                        src="/assets/cards_windSurf.png"
+                        alt="illustration de wind surf"
+                    />
+                    <p
+                        class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                    >
+                        Wing surf
+                    </p>
                 </div>
+                <div class="relative">
+                    <img
+                        class="max-h-[336px] max-w-[266px]"
+                        src="/assets/cards_voile.png"
+                        alt="illustration de voile"
+                    />
+                    <p
+                        class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                    >
+                        Voile
+                    </p>
+                </div>
+                <div class="relative">
+                    <img
+                        class="max-h-[336px] max-w-[266px]"
+                        src="/assets/cards_canoe.png"
+                        alt="illustration de canoe"
+                    />
+                    <p
+                        class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                    >
+                        Canoe
+                    </p>
+                </div>
+            </div>
+            <button
+                class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white"
+            >
+                <p class="text-[0.9375rem] font-bold">Découvrir le Pôle mer</p>
+                <span>&#x2794;</span>
+            </button>
+        </section>
+        <section
+            class="h-[631px] w-full bg-[url('/assets/base_activites.png')] bg-cover bg-center bg-no-repeat"
+        >
+            <div
+                class="ml-[1.125rem] flex flex-col items-center pt-[4.375rem] pb-[4.8125rem] text-white"
+            >
+                <h2
+                    class="mb-[1.9375rem] px-5 text-center text-[2.5rem] font-bold uppercase"
+                >
+                    nos bases d’activités
+                </h2>
+                <ul
+                    class="mb-[2.25rem] ml-auto flex w-[782px] gap-[33px] text-xl font-bold"
+                >
+                    <li class="underline underline-offset-6">
+                        Gruissan Pôle Mer
+                    </li>
+                    <li>Gruissan Pôle Étang</li>
+                    <li>Carry le Rouet</li>
+                    <li>Gorges de la Loue</li>
+                </ul>
+                <h3 class="mb-3 text-[1.3125rem] font-bold">
+                    Gruissan Pôle Mer
+                </h3>
+                <p class="mb-7 text-center text-[1.0625rem] leading-[24px]">
+                    Lorem ipsum dolor sit amet consectetur. Consequat volutpat
+                    in nisl elementum id. Donec cras nulla viverra sit tempus
+                    maecenas vehicula lacus. Egestas est cursus in sit
+                    pellentesque. Sit sem tristique habitasse tempus feugiat et.
+                </p>
                 <button
-                    class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-gradient-to-r from-[#D95681] to-[#443383] px-5 py-[10px] text-white"
+                    class="mb-3 flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
                 >
                     <p class="text-[0.9375rem] font-bold">
                         Découvrir le Pôle mer
                     </p>
                     <span>&#x2794;</span>
                 </button>
-            </section>
-            <section>
-                
-            </section>
-        </main>
+                <button
+                    class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] border border-[2px] bg-transparent px-5 py-[10px] text-white"
+                >
+                    <p class="text-[0.9375rem] font-bold">Voir sur la carte</p>
+                    <span>&#x2794;</span>
+                </button>
+            </div>
+        </section>
+        <footer
+            class="flex h-screen flex-col items-center bg-gradient-to-b from-[var(--color-pink)] to-[var(--color-purple)] py-[4.375rem]"
+        ></footer>
+        <script type="module" src="src/main.ts"></script>
     </body>
 </html>

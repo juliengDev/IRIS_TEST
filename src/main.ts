@@ -1,5 +1,3 @@
-import './style.css'
-
 // section  menu
 
 const closeMenuEl = document.getElementById('close-menu') as HTMLButtonElement
@@ -26,5 +24,3 @@ openMenuEl.addEventListener('click', () => {
     mobileMenu.setAttribute('aria-hidden', 'false')
     openMenuEl.setAttribute('aria-expanded', 'true')
 })
-
-
