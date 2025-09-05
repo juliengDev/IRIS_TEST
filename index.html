@@ -58,7 +58,7 @@
                     class="h-[667px] w-full bg-[url('/assets/hero_mobile.png')] bg-cover bg-center bg-no-repeat lg:bg-[url('/assets/hero_desktop.png')]"
                 >
                     <header
-                        class="mb-[13.3125rem] flex items-center justify-between bg-transparent px-6 py-[1.125rem]"
+                        class="mb-[13.3125rem] flex items-center justify-between bg-transparent px-6 py-[1.125rem] lg:mr-[12rem] lg:ml-[3.5rem]"
                         role="banner"
                     >
                         <img src="/assets/logo.png" alt="Logo IRIS Center" />
@@ -247,52 +247,62 @@
                 </button>
             </section>
             <section
-                class="h-[631px] w-full bg-[url('/assets/base_activites.png')] bg-cover bg-center bg-no-repeat"
+                class="h-[631px] w-full bg-[url('/assets/base_activites.png')] bg-cover bg-center bg-no-repeat lg:h-auto lg:bg-[url('/assets/base_activites_desktop.png')]"
             >
                 <div
-                    class="ml-[1.125rem] flex flex-col items-center pt-[4.375rem] pb-[4.8125rem] text-white"
+                    class="ml-[1.125rem] flex flex-col items-center pt-[4.375rem] pb-[4.8125rem] text-white lg:px-[12.1875rem] lg:pt-[9.75rem]"
                 >
                     <h2
-                        class="mb-[1.9375rem] px-5 text-center text-[2.5rem] font-bold uppercase"
+                        class="mb-[1.9375rem] px-5 text-center text-[2.5rem] font-bold uppercase lg:mb-[5.3125rem] lg:text-[4.6875rem] lg:leading-[80px] lg:tracking-[2%]"
                     >
                         nos bases d’activités
                     </h2>
-                    <ul
-                        class="mb-[2.25rem] ml-auto flex w-[782px] gap-[33px] text-xl font-bold"
-                    >
-                        <li class="underline underline-offset-6">
+
+                    <div class="lg:mb-[5.3125rem] lg:max-w-[41.9375rem]">
+                        <ul
+                            class="mb-[2.25rem] ml-auto flex w-[782px] gap-[33px] text-xl font-bold lg:mb-[5.3125rem] lg:ml-0"
+                        >
+                            <li class="underline underline-offset-6">
+                                Gruissan Pôle Mer
+                            </li>
+                            <li>Gruissan Pôle Étang</li>
+                            <li>Carry le Rouet</li>
+                            <li>Gorges de la Loue</li>
+                        </ul>
+                        <h3
+                            class="mb-3 text-[1.3125rem] font-bold lg:self-start"
+                        >
                             Gruissan Pôle Mer
-                        </li>
-                        <li>Gruissan Pôle Étang</li>
-                        <li>Carry le Rouet</li>
-                        <li>Gorges de la Loue</li>
-                    </ul>
-                    <h3 class="mb-3 text-[1.3125rem] font-bold">
-                        Gruissan Pôle Mer
-                    </h3>
-                    <p class="mb-7 text-center text-[1.0625rem] leading-[24px]">
-                        Lorem ipsum dolor sit amet consectetur. Consequat
-                        volutpat in nisl elementum id. Donec cras nulla viverra
-                        sit tempus maecenas vehicula lacus. Egestas est cursus
-                        in sit pellentesque. Sit sem tristique habitasse tempus
-                        feugiat et.
-                    </p>
-                    <button
-                        class="mb-3 flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
-                    >
-                        <p class="text-[0.9375rem] font-bold">
-                            Découvrir le Pôle mer
+                        </h3>
+                        <p
+                            class="mb-7 text-center text-[1.0625rem] leading-[24px] lg:text-start"
+                        >
+                            Lorem ipsum dolor sit amet consectetur. Consequat
+                            volutpat in nisl elementum id. Donec cras nulla
+                            viverra sit tempus maecenas vehicula lacus. Egestas
+                            est cursus in sit pellentesque. Sit sem tristique
+                            habitasse tempus feugiat et.
                         </p>
-                        <span>&#x2794;</span>
-                    </button>
-                    <button
-                        class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] border border-[2px] bg-transparent px-5 py-[10px] text-white"
-                    >
-                        <p class="text-[0.9375rem] font-bold">
-                            Voir sur la carte
-                        </p>
-                        <span>&#x2794;</span>
-                    </button>
+
+                        <div class="lg:flex lg:items-center lg:gap-4">
+                            <button
+                                class="mb-3 flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29] lg:mb-0"
+                            >
+                                <p class="text-[0.9375rem] font-bold">
+                                    Découvrir le Pôle mer
+                                </p>
+                                <span>&#x2794;</span>
+                            </button>
+                            <button
+                                class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] border border-[2px] bg-transparent px-5 py-[10px] text-white lg:mb-0"
+                            >
+                                <p class="text-[0.9375rem] font-bold">
+                                    Voir sur la carte
+                                </p>
+                                <span>&#x2794;</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
