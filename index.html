@@ -10,27 +10,33 @@
     </head>
     <body>
         <div
-            class="min-h-screen bg-gradient-to-b from-[#D95681]/75 to-[#443383]/75"
+            id="mobile-menu"
+            class="hidden min-h-screen bg-gradient-to-b from-[#D95681]/75 to-[#443383]/75"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="mobile-menu-title"
         >
             <header class="flex items-center justify-between bg-white p-5">
                 <img
-                    src="./public/assets/logo_mobile.png"
+                    src="./public/assets/logo_mobile_colors.png"
                     alt="Logo IRIS Center"
                 />
                 <div class="flex items-center gap-[18px]">
-                    <img
-                        id="searchMenu"
-                        src="./public/assets/search.svg"
-                        alt="search icon"
-                    />
-                    <img
-                        id="closeMenu"
-                        src="./public/assets/close.svg"
-                        alt="search icon"
-                    />
+                    <button id="searchMenu" aria-label="Search">
+                        <img
+                            src="./public/assets/search.svg"
+                            alt="search icon"
+                        />
+                    </button>
+                    <button id="close-menu" aria-label="Close menu">
+                        <img
+                            src="./public/assets/close.svg"
+                            alt="search icon"
+                        />
+                    </button>
                 </div>
             </header>
-            <main>
+            <div>
                 <ul
                     class="flex flex-col gap-[37px] px-5 py-[2.625rem] text-[1.4375rem] font-bold tracking-[1%] text-white"
                 >
@@ -40,7 +46,48 @@
                     <li>Blog</li>
                     <li>Formations pro.</li>
                 </ul>
-            </main>
+            </div>
+        </div>
+        <div
+            id="menu"
+            class="cover h-[667px] w-full bg-[url('/assets/hero_mobile.png')] bg-top bg-no-repeat sm:h-[900px] md:bg-[url('/assets/hero_desktop.png')]"
+        >
+            <header
+                class="mb-[13.3125rem] flex items-center justify-between bg-transparent px-6 py-[1.125rem]"
+                role="banner"
+            >
+                <img src="./public/assets/logo.png" alt="Logo IRIS Center" />
+                <div class="flex items-center gap-[18px]">
+                    <button id="searchMenu-desktop" aria-label="Search">
+                        <img
+                            src="./public/assets/search_desktop.svg"
+                            alt="search icon"
+                        />
+                    </button>
+                    <button id="open-menu" aria-label="Open menu">
+                        <img
+                            src="./public/assets/menu_desktop.svg"
+                            alt="search icon"
+                        />
+                    </button>
+                </div>
+            </header>
+            <div class="flex flex-col items-center gap-1 text-white">
+                <h1 class="text-[1.3125rem] font-medium">
+                    Explorer les sports nautiques
+                </h1>
+                <h2 class="text-[3.625rem] font-black uppercase">wing foil</h2>
+                <button
+                    class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
+                >
+                    <p class="text-[0.9375rem] font-bold">Réserver mon cours</p>
+                    <span>&#x2794;</span>
+                </button>
+                <img
+                    src="./public/assets/tabs_slider.png"
+                    alt="Sélection d'activités"
+                />
+            </div>
         </div>
     </body>
 </html>
