@@ -6,303 +6,800 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="job test" />
         <link rel="stylesheet" href="/src/style.css" />
-        <title>Project Title</title>
+        <title>IRIS Test</title>
     </head>
     <body>
-        <main>
-            <section>
-                <div
-                    id="mobile-menu"
-                    class="hidden min-h-screen bg-gradient-to-b from-[#D95681]/75 to-[#443383]/75"
-                    role="dialog"
-                    aria-modal="true"
-                    aria-labelledby="mobile-menu-title"
-                >
-                    <header
-                        class="flex items-center justify-between bg-white p-5"
+        <div
+            id="mobile-menu"
+            class="relative z-50 hidden min-h-screen w-full bg-gradient-to-b from-[#D95681] to-[#443383]"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="mobile-menu-title"
+        >
+            <header class="flex items-center justify-between bg-white p-5">
+                <a href="/">
+                    <img
+                        src="/assets/logo_mobile_colors.png"
+                        alt="Logo IRIS Center"
+                    />
+                </a>
+                <div class="flex items-center gap-[18px]">
+                    <button
+                        id="searchMenu"
+                        aria-label="Search"
+                        class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-120"
                     >
-                        <img
-                            src="/assets/logo_mobile_colors.png"
-                            alt="Logo IRIS Center"
-                        />
-                        <div class="flex items-center gap-[18px]">
-                            <button id="searchMenu" aria-label="Search">
-                                <img
-                                    src="/assets/search.svg"
-                                    alt="search icon"
-                                />
-                            </button>
-                            <button id="close-menu" aria-label="Close menu">
-                                <img
-                                    src="/assets/close.svg"
-                                    alt="search icon"
-                                />
-                            </button>
-                        </div>
-                    </header>
-                    <div>
-                        <ul
-                            class="flex flex-col gap-[37px] px-5 py-[2.625rem] text-[1.4375rem] font-bold tracking-[1%] text-white"
-                        >
-                            <li>Nos centres sportifs</li>
-                            <li>Activités outdoor</li>
-                            <li>Cours et location</li>
-                            <li>Blog</li>
-                            <li>Formations pro.</li>
-                        </ul>
-                    </div>
+                        <img src="/assets/search.svg" alt="search icon" />
+                    </button>
+                    <button
+                        id="close-menu"
+                        aria-label="Close menu"
+                        class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-120"
+                    >
+                        <img src="/assets/close.svg" alt="search icon" />
+                    </button>
                 </div>
-
-                <div
-                    id="menu"
-                    class="h-[667px] w-full bg-[url('/assets/hero_mobile.png')] bg-cover bg-center bg-no-repeat lg:bg-[url('/assets/hero_desktop.png')]"
+            </header>
+            <div>
+                <ul
+                    class="flex flex-col gap-[37px] px-5 py-[2.625rem] text-[1.4375rem] font-bold tracking-[1%] text-white"
                 >
-                    <header
-                        class="mb-[13.3125rem] flex items-center justify-between bg-transparent px-6 py-[1.125rem] lg:mr-[12rem] lg:ml-[3.5rem]"
-                        role="banner"
+                    <li
+                        class="relative inline-block w-fit cursor-pointer text-white after:absolute after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
                     >
-                        <img src="/assets/logo.png" alt="Logo IRIS Center" />
-                        <ul
-                            class="hidden items-center gap-4 text-white lg:flex"
-                        >
-                            <li>Nos centres sportifs</li>
-                            <li>Activités outdoor</li>
-                            <li>Cours et location</li>
-                            <li>Blog</li>
-                            <li>Formations pro.</li>
-                        </ul>
-                        <div class="flex items-center gap-[18px]">
-                            <button id="searchMenu-desktop" aria-label="Search">
-                                <img
-                                    src="/assets/search_desktop.svg"
-                                    alt="search icon"
-                                />
-                            </button>
-                            <button
-                                class="lg:hidden"
-                                id="open-menu"
-                                aria-label="Open menu"
-                            >
-                                <img
-                                    src="/assets/menu_desktop.svg"
-                                    alt="search icon"
-                                />
-                            </button>
-                        </div>
-                    </header>
-                    <div class="flex flex-col items-center gap-1 text-white">
+                        Nos centres sportifs
+                    </li>
+                    <li
+                        class="relative w-fit cursor-pointer text-white after:absolute after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+                    >
+                        <a href="activites"> Activités outdoor</a>
+                    </li>
+                    <li
+                        class="relative w-fit cursor-pointer text-white after:absolute after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+                    >
+                        <a href="#cours">Cours et location</a>
+                    </li>
+                    <li
+                        class="relative w-fit cursor-pointer text-white after:absolute after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+                    >
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li
+                        class="relative w-fit cursor-pointer text-white after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+                    >
+                        <a href="#formations"> Formations pro.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <header
+            class="absolute z-10 flex w-full items-center justify-between bg-transparent px-6 py-[1.125rem] lg:px-[3.5rem] lg:pr-[12rem]"
+            role="banner"
+        >
+            <a href="/">
+                <img src="/assets/logo.png" alt="Logo IRIS Center" />
+            </a>
+            <ul class="hidden items-center gap-4 text-white lg:flex">
+                <li
+                    class="cursor-pointer hover:underline hover:underline-offset-4"
+                >
+                    Nos centres sportifs
+                </li>
+                <li
+                    class="cursor-pointer hover:underline hover:underline-offset-4"
+                >
+                    Activités outdoor
+                </li>
+                <li
+                    class="cursor-pointer hover:underline hover:underline-offset-4"
+                >
+                    Cours et location
+                </li>
+                <li
+                    class="cursor-pointer hover:underline hover:underline-offset-4"
+                >
+                    Blog
+                </li>
+                <li
+                    class="cursor-pointer hover:underline hover:underline-offset-4"
+                >
+                    Formations pro.
+                </li>
+            </ul>
+            <div class="flex items-center gap-[18px]">
+                <button
+                    id="searchMenu-desktop"
+                    aria-label="Search"
+                    class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-120"
+                >
+                    <img src="/assets/search_desktop.svg" alt="search icon" />
+                </button>
+                <button
+                    class="cursor-pointer lg:hidden"
+                    id="open-menu"
+                    aria-label="Open menu"
+                >
+                    <img src="/assets/menu_desktop.svg" alt="open menu icon" />
+                </button>
+            </div>
+        </header>
+
+        <main class="overflow-hidden">
+            <section class="overflow-hidden">
+                <div class="slider-wrapper relative overflow-hidden">
+                    <div
+                        class="absolute top-1/2 left-1/2 z-10 mt-10 flex w-[90%] -translate-x-1/2 -translate-y-1/2 flex-col items-center text-white"
+                    >
                         <h1
-                            class="text-[1.3125rem] font-medium lg:text-[2.1875rem]"
+                            class="absolute text-center text-[clamp(1.3125rem,3vw+0.5rem,2.1875rem)] font-medium"
                         >
                             Explorer les sports nautiques
                         </h1>
-                        <div class="flex items-center gap-8">
+                        <div class="mt-50">
                             <button
-                                class="hidden items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white sm:flex lg:block"
+                                class="mb-[3.375rem] flex cursor-pointer items-center gap-2 rounded-[25px] bg-white px-[1.5625rem] py-3 tracking-[1%] text-[#151E29] transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[var(--color-pink)] hover:to-[var(--color-purple)] hover:text-white"
                             >
-                                <img
-                                    src="/assets/left-arrow.svg"
-                                    alt="fleche de gauche"
-                                />
+                                <a
+                                    class="text-[0.9375rem] font-bold lg:text-lg"
+                                >
+                                    Réserver mon cours
+                                </a>
+                                <span class="text-xl">&#x2794;</span>
                             </button>
-                            <h2
-                                class="text-[3.625rem] font-black tracking-[2%] uppercase lg:text-[7.3875rem]"
+                            <div
+                                id="tabs"
+                                class="flex justify-center gap-4"
+                                role="tablist"
                             >
-                                wing foil
-                            </h2>
-                            <button
-                                class="hidden items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white sm:flex lg:block"
-                            >
-                                <img
-                                    src="/assets/right-arrow.svg"
-                                    alt="fleche de droite"
-                                />
-                            </button>
+                                <button
+                                    class="tab-btn w-14 cursor-pointer rounded-full bg-white px-3 py-1 text-[#151E29] transition-all duration-300 hover:bg-white"
+                                    data-index="0"
+                                    aria-selected="true"
+                                    role="tab"
+                                ></button>
+                                <button
+                                    class="tab-btn cursor-pointer rounded-full bg-white/50 px-3 py-1 transition-all duration-300 hover:bg-white"
+                                    data-index="1"
+                                    aria-selected="false"
+                                    role="tab"
+                                ></button>
+                                <button
+                                    class="tab-btn cursor-pointer rounded-full bg-white/50 px-3 py-1 transition-all duration-300 hover:bg-white"
+                                    data-index="2"
+                                    aria-selected="false"
+                                    role="tab"
+                                ></button>
+                                <button
+                                    class="tab-btn cursor-pointer rounded-full bg-white/50 px-3 py-1 transition-all duration-300 hover:bg-white"
+                                    data-index="3"
+                                    aria-selected="false"
+                                    role="tab"
+                                ></button>
+                            </div>
                         </div>
-                        <button
-                            class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
-                        >
-                            <p class="text-[0.9375rem] font-bold">
-                                Réserver mon cours
-                            </p>
-                            <span>&#x2794;</span>
-                        </button>
-                        <img
-                            src="/assets/tabs_slider.png"
-                            alt="Sélection d'activités"
-                        />
                     </div>
+                    <h2
+                        id="previous-sportNamelabel"
+                        class="absolute top-1/2 -left-[15%] hidden -translate-y-1/2 stroke-white text-[clamp(3.625rem,6vw+1rem,7.3875rem)] font-black tracking-[2%] text-transparent uppercase sm:block"
+                    >
+                        Canoe
+                    </h2>
+
+                    <h2
+                        id="sportNamelabel"
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[clamp(3.625rem,6vw+1rem,7.3875rem)] font-black tracking-[2%] text-white uppercase transition-all duration-500"
+                    ></h2>
+                    <h2
+                        id="next-sportNamelabel"
+                        class="absolute top-1/2 -right-[30%] hidden -translate-y-1/2 stroke-white text-[clamp(3.625rem,6vw+1rem,7.3875rem)] font-black tracking-[2%] text-transparent uppercase sm:block"
+                    >
+                        windsurf
+                    </h2>
+                    <button
+                        id="slide-arrow-prev"
+                        class="slide-arrow absolute top-1/2 left-1/5 z-20 hidden h-10 cursor-pointer items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white opacity-50 transition-opacity duration-100 hover:opacity-100 sm:flex lg:block"
+                    >
+                        <img
+                            src="/assets/left-arrow.svg"
+                            alt="fleche de gauche"
+                        />
+                    </button>
+
+                    <button
+                        id="slide-arrow-next"
+                        class="slide-arrow absolute top-1/2 right-1/5 z-20 hidden h-10 cursor-pointer items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white opacity-50 transition-opacity duration-100 hover:opacity-100 sm:flex lg:block"
+                    >
+                        <img
+                            src="/assets/right-arrow.svg"
+                            alt="fleche de droite"
+                        />
+                    </button>
+
+                    <ul
+                        class="slides-container m-0 flex h-[667px] w-full list-none overflow-scroll scroll-smooth p-0 sm:h-[calc(100vh-2rem)]"
+                        id="slides-container"
+                    >
+                        <li class="slide w-full flex-[1_0_100%]">
+                            <img
+                                src="/assets/carousel-windfoil.png"
+                                alt="illustration de windfoil"
+                                class="h-full w-full object-cover"
+                            />
+                        </li>
+                        <li class="slide w-full flex-[1_0_100%]">
+                            <img
+                                src="/assets/carousel-windsurf.jpg"
+                                alt="illustration de windsurf"
+                                class="h-full w-full object-cover"
+                            />
+                        </li>
+                        <li class="slide w-full flex-[1_0_100%]">
+                            <img
+                                src="/assets/carousel-voile.jpg"
+                                alt="illustration de voile"
+                                class="h-full w-full object-cover"
+                            />
+                        </li>
+                        <li class="slide w-full flex-[1_0_100%]">
+                            <img
+                                src="/assets/carousel-canoe.jpg"
+                                alt="illustration de canoe"
+                                class="h-full w-full object-cover"
+                            />
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section
-                class="mx-[1.125rem] pt-[3.125rem] pb-[3.3125rem] lg:mx-[13.625rem] lg:pt-[10.625rem]"
+                class="flex flex-col justify-between px-[1.125rem] pt-[3.125rem] lg:mb-4 lg:px-[12.1875rem] lg:pt-[10.625rem] xl:flex-row"
             >
-                <h2
-                    class="text-custom-purple mb-1 text-xl font-medium uppercase lg:text-[2.1875rem]"
-                >
-                    sports outdoor
-                </h2>
-                <div
-                    class="mb-3 flex flex-col sm:flex-row sm:items-center sm:justify-between lg:mb-4 lg:max-w-[1420px]"
-                >
-                    <div class="lg:flex-1">
-                        <h3
-                            class="mb-2 bg-clip-text text-[2.5rem] font-black text-transparent uppercase lg:text-[4.6875rem] lg:leading-[80px] lg:tracking-[2%]"
-                            style="
-                                background-image: linear-gradient(
-                                    to right,
-                                    var(--color-custom-pink),
-                                    var(--color-custom-purple)
-                                );
-                            "
-                        >
-                            Nos activités
-                        </h3>
-                    </div>
-                    <p
-                        class="text-sm leading-[21px] font-medium sm:max-w-[18.75rem] lg:max-w-[44.6875rem] lg:flex-1 lg:pl-[30px] lg:text-lg lg:leading-[30px]"
+                <div>
+                    <h2
+                        class="text-custom-purple mb-1 font-medium uppercase 2xl:text-[2.1875rem]"
                     >
-                        Lorem ipsum dolor sit amet consectetur. Consequat
-                        volutpat in nisl elementum id. Donec cras nulla viverra
-                        sit tempus maecenas.
-                    </p>
-                    <div class="hidden gap-4 lg:ml-11 lg:flex lg:self-end">
-                        <button
-                            class="hidden items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white sm:flex lg:block"
+                        sports outdoor
+                    </h2>
+                    <h3
+                        class="mb-2 bg-clip-text text-[2.5rem] font-black text-transparent uppercase lg:leading-[80px] lg:tracking-[2%] 2xl:text-[4.6875rem]"
+                        style="
+                            background-image: linear-gradient(
+                                to right,
+                                var(--color-custom-pink),
+                                var(--color-custom-purple)
+                            );
+                        "
+                    >
+                        Nos activités
+                    </h3>
+                </div>
+                <p
+                    class="mb-3 max-w-[29.6875rem] self-start text-sm leading-[clamp(1.3125rem,2.5vw,1.875rem)] font-medium lg:self-start xl:self-end 2xl:pl-[4.6875rem] 2xl:text-lg"
+                >
+                    Découvrez une sélection d’activités nautiques uniques.
+                    Profitez de la mer et du littoral pour vivre des expériences
+                    sportives, conviviales et accessibles à tous.
+                </p>
+                <div
+                    class="xs:flex mb-12 hidden gap-4 self-start lg:mb-0 xl:self-end 2xl:ml-11"
+                >
+                    <button
+                        id="left-slide"
+                        class="flex cursor-pointer items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white transition-all duration-300 ease-in-out hover:bg-gradient-to-l"
+                    >
+                        <img
+                            src="/assets/left-arrow.svg"
+                            alt="fleche de gauche"
+                        />
+                    </button>
+                    <button
+                        id="rigth-slide"
+                        class="cursor-pointer items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white transition-all duration-300 ease-in-out hover:bg-gradient-to-l sm:flex lg:block"
+                    >
+                        <img
+                            src="/assets/right-arrow.svg"
+                            alt="fleche de droite"
+                        />
+                    </button>
+                </div>
+            </section>
+
+            <section
+                class="mb-[3.375rem] overflow-hidden px-[1.125rem] sm:mb-[10.625rem] lg:px-[12.1875rem]"
+            >
+                <div class="carousel mb-8 w-full overflow-x-auto">
+                    <div
+                        class="carousel-inner flex gap-4 lg:gap-10"
+                        id="carousel"
+                    >
+                        <div
+                            class="card group relative aspect-[266/336] w-[266px] flex-shrink-0 overflow-hidden rounded-[15px] lg:aspect-[380/532] lg:w-full lg:flex-shrink"
                         >
                             <img
-                                src="/assets/left-arrow.svg"
-                                alt="fleche de gauche"
+                                class="h-full w-full object-cover"
+                                src="/assets/cards_wingFoil.png"
+                                alt="illustration de wind surf"
                             />
-                        </button>
-                        <button
-                            class="hidden items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white sm:flex lg:block"
+                            <p
+                                class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                            >
+                                Wing Foil
+                            </p>
+                            <div
+                                class="description-card absolute bottom-3 left-1/2 w-[90%] max-w-[300px] -translate-x-1/2 translate-y-20 rounded-[18px] bg-white p-7 text-[#151E29] opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100"
+                            >
+                                <h3
+                                    style="
+                                        background-image: linear-gradient(
+                                            to right,
+                                            var(--color-custom-pink),
+                                            var(--color-custom-purple)
+                                        );
+                                    "
+                                    class="mb-[0.625rem] bg-clip-text text-lg text-[1.8125rem] leading-[44px] font-bold tracking-[2%] text-transparent"
+                                >
+                                    Wing Foil
+                                </h3>
+                                <p
+                                    class="mb-4 text-base leading-[21px] font-medium"
+                                >
+                                    Découvrez nos cours de Wing Foil et profitez
+                                    des sensations sur l'eau !
+                                </p>
+                                <div class="flex justify-between">
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/schedule-icon.svg"
+                                            alt="icone duree de l'activitee"
+                                        />
+                                        <p>1h00</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/price-tag-icon.svg"
+                                            alt="icon de prix de l'activitee"
+                                        />
+                                        <p>100&#8364;</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/mini-location-icon.svg"
+                                            alt="icon de localisation de l'activitee"
+                                        />
+                                        <p>Gruissan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="card group relative aspect-[266/336] w-[266px] flex-shrink-0 overflow-hidden rounded-[15px] lg:aspect-[380/532] lg:w-full lg:flex-shrink"
                         >
                             <img
-                                src="/assets/right-arrow.svg"
-                                alt="fleche de droite"
+                                class="h-full w-full object-cover"
+                                src="/assets/cards_windSurf.png"
+                                alt="illustration de wind surf"
                             />
-                        </button>
+                            <p
+                                class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                            >
+                                Wing surf
+                            </p>
+                            <div
+                                class="description-card absolute bottom-3 left-1/2 w-[90%] max-w-[300px] -translate-x-1/2 translate-y-20 rounded-[18px] bg-white p-7 text-[#151E29] opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100"
+                            >
+                                <h3
+                                    style="
+                                        background-image: linear-gradient(
+                                            to right,
+                                            var(--color-custom-pink),
+                                            var(--color-custom-purple)
+                                        );
+                                    "
+                                    class="mb-[0.625rem] bg-clip-text text-lg text-[1.8125rem] leading-[44px] font-bold tracking-[2%] text-transparent"
+                                >
+                                    Wing Surf
+                                </h3>
+                                <p
+                                    class="mb-4 text-base leading-[21px] font-medium"
+                                >
+                                    Découvrez le windsurf et domptez les vagues
+                                    avec style ! Que vous soyez débutant ou
+                                    confirmé, profitez d'activités nautiques
+                                    excitantes tout en admirant le paysage
+                                    depuis la mer.
+                                </p>
+                                <div class="flex justify-between">
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/schedule-icon.svg"
+                                            alt="icone duree de l'activitee"
+                                        />
+                                        <p>1h00</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/price-tag-icon.svg"
+                                            alt="icon de prix de l'activitee"
+                                        />
+                                        <p>100&#8364;</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/mini-location-icon.svg"
+                                            alt="icon de localisation de l'activitee"
+                                        />
+                                        <p>Gruissan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="card group relative aspect-[266/336] w-[266px] flex-shrink-0 overflow-hidden rounded-[15px] lg:aspect-[380/532] lg:w-full lg:flex-shrink"
+                        >
+                            <img
+                                class="h-full w-full object-cover"
+                                src="/assets/cards_voile.png"
+                                alt="illustration de voile"
+                            />
+                            <p
+                                class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                            >
+                                Voile
+                            </p>
+                            <div
+                                class="description-card absolute bottom-3 left-1/2 w-[90%] max-w-[300px] -translate-x-1/2 translate-y-20 rounded-[18px] bg-white p-7 text-[#151E29] opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100"
+                            >
+                                <h3
+                                    style="
+                                        background-image: linear-gradient(
+                                            to right,
+                                            var(--color-custom-pink),
+                                            var(--color-custom-purple)
+                                        );
+                                    "
+                                    class="mb-[0.625rem] bg-clip-text text-lg text-[1.8125rem] leading-[44px] font-bold tracking-[2%] text-transparent"
+                                >
+                                    Voile
+                                </h3>
+                                <p
+                                    class="mb-4 text-base leading-[21px] font-medium"
+                                >
+                                    Naviguez en harmonie avec le vent ! Apprenez
+                                    les techniques de navigation à la voile et
+                                    découvrez le plaisir de glisser sur l'eau en
+                                    silence.
+                                </p>
+                                <div class="flex justify-between">
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/schedule-icon.svg"
+                                            alt="icone duree de l'activitee"
+                                        />
+                                        <p>2h00</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/price-tag-icon.svg"
+                                            alt="icon de prix de l'activitee"
+                                        />
+                                        <p>80&#8364;</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/mini-location-icon.svg"
+                                            alt="icon de localisation de l'activitee"
+                                        />
+                                        <p>Gruissan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="card group relative aspect-[266/336] w-[266px] flex-shrink-0 overflow-hidden rounded-[15px] lg:aspect-[380/532] lg:w-full lg:flex-shrink"
+                        >
+                            <img
+                                class="h-full w-full object-cover"
+                                src="/assets/cards_canoe.png"
+                                alt="illustration de canoe"
+                            />
+                            <p
+                                class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                            >
+                                Canoe
+                            </p>
+                            <div
+                                class="description-card absolute bottom-3 left-1/2 w-[90%] max-w-[300px] -translate-x-1/2 translate-y-20 rounded-[18px] bg-white p-7 text-[#151E29] opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100"
+                            >
+                                <h3
+                                    style="
+                                        background-image: linear-gradient(
+                                            to right,
+                                            var(--color-custom-pink),
+                                            var(--color-custom-purple)
+                                        );
+                                    "
+                                    class="mb-[0.625rem] bg-clip-text text-lg text-[1.8125rem] leading-[44px] font-bold tracking-[2%] text-transparent"
+                                >
+                                    Canoë
+                                </h3>
+                                <p
+                                    class="mb-4 text-base leading-[21px] font-medium"
+                                >
+                                    Explorez les côtes en canoë ! Une activité
+                                    paisible pour découvrir la nature et
+                                    profiter d'une balade relaxante sur l'eau.
+                                </p>
+                                <div class="flex justify-between">
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/schedule-icon.svg"
+                                            alt="icone duree de l'activitee"
+                                        />
+                                        <p>1h30</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/price-tag-icon.svg"
+                                            alt="icon de prix de l'activitee"
+                                        />
+                                        <p>60&#8364;</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/mini-location-icon.svg"
+                                            alt="icon de localisation de l'activitee"
+                                        />
+                                        <p>Gruissan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="card group relative aspect-[266/336] w-[266px] flex-shrink-0 overflow-hidden rounded-[15px] lg:aspect-[380/532] lg:w-full lg:flex-shrink"
+                        >
+                            <img
+                                class="h-full w-full object-cover"
+                                src="/assets/cards_wingFoil.png"
+                                alt="illustration de wind surf"
+                            />
+                            <p
+                                class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                            >
+                                Wing Foil
+                            </p>
+                            <div
+                                class="description-card absolute bottom-3 left-1/2 w-[90%] max-w-[300px] -translate-x-1/2 translate-y-20 rounded-[18px] bg-white p-7 text-[#151E29] opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100"
+                            >
+                                <h3
+                                    style="
+                                        background-image: linear-gradient(
+                                            to right,
+                                            var(--color-custom-pink),
+                                            var(--color-custom-purple)
+                                        );
+                                    "
+                                    class="mb-[0.625rem] bg-clip-text text-lg text-[1.8125rem] leading-[44px] font-bold tracking-[2%] text-transparent"
+                                >
+                                    Wing Foil
+                                </h3>
+                                <p
+                                    class="mb-4 text-base leading-[21px] font-medium"
+                                >
+                                    Découvrez nos cours de Wing Foil et profitez
+                                    des sensations sur l'eau !
+                                </p>
+                                <div class="flex justify-between">
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/schedule-icon.svg"
+                                            alt="icone duree de l'activitee"
+                                        />
+                                        <p>1h00</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/price-tag-icon.svg"
+                                            alt="icon de prix de l'activitee"
+                                        />
+                                        <p>100&#8364;</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/mini-location-icon.svg"
+                                            alt="icon de localisation de l'activitee"
+                                        />
+                                        <p>Gruissan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="card group relative aspect-[266/336] w-[266px] flex-shrink-0 overflow-hidden rounded-[15px] lg:aspect-[380/532] lg:w-full lg:flex-shrink"
+                        >
+                            <img
+                                class="h-full w-full object-cover"
+                                src="/assets/cards_windSurf.png"
+                                alt="illustration de wind surf"
+                            />
+                            <p
+                                class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                            >
+                                Wing surf
+                            </p>
+                            <div
+                                class="description-card absolute bottom-3 left-1/2 w-[90%] max-w-[300px] -translate-x-1/2 translate-y-20 rounded-[18px] bg-white p-7 text-[#151E29] opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100"
+                            >
+                                <h3
+                                    style="
+                                        background-image: linear-gradient(
+                                            to right,
+                                            var(--color-custom-pink),
+                                            var(--color-custom-purple)
+                                        );
+                                    "
+                                    class="mb-[0.625rem] bg-clip-text text-lg text-[1.8125rem] leading-[44px] font-bold tracking-[2%] text-transparent"
+                                >
+                                    Wing Surf
+                                </h3>
+                                <p
+                                    class="mb-4 text-base leading-[21px] font-medium"
+                                >
+                                    Découvrez le windsurf et domptez les vagues
+                                    avec style ! Que vous soyez débutant ou
+                                    confirmé, profitez d'activités nautiques
+                                    excitantes tout en admirant le paysage
+                                    depuis la mer.
+                                </p>
+                                <div class="flex justify-between">
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/schedule-icon.svg"
+                                            alt="icone duree de l'activitee"
+                                        />
+                                        <p>1h00</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/price-tag-icon.svg"
+                                            alt="icon de prix de l'activitee"
+                                        />
+                                        <p>100&#8364;</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/mini-location-icon.svg"
+                                            alt="icon de localisation de l'activitee"
+                                        />
+                                        <p>Gruissan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="card group relative aspect-[266/336] w-[266px] flex-shrink-0 overflow-hidden rounded-[15px] lg:aspect-[380/532] lg:w-full lg:flex-shrink"
+                        >
+                            <img
+                                class="h-full w-full object-cover"
+                                src="/assets/cards_voile.png"
+                                alt="illustration de voile"
+                            />
+                            <p
+                                class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                            >
+                                Voile
+                            </p>
+                            <div
+                                class="description-card absolute bottom-3 left-1/2 w-[90%] max-w-[300px] -translate-x-1/2 translate-y-20 rounded-[18px] bg-white p-7 text-[#151E29] opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100"
+                            >
+                                <h3
+                                    style="
+                                        background-image: linear-gradient(
+                                            to right,
+                                            var(--color-custom-pink),
+                                            var(--color-custom-purple)
+                                        );
+                                    "
+                                    class="mb-[0.625rem] bg-clip-text text-lg text-[1.8125rem] leading-[44px] font-bold tracking-[2%] text-transparent"
+                                >
+                                    Voile
+                                </h3>
+                                <p
+                                    class="mb-4 text-base leading-[21px] font-medium"
+                                >
+                                    Naviguez en harmonie avec le vent ! Apprenez
+                                    les techniques de navigation à la voile et
+                                    découvrez le plaisir de glisser sur l'eau en
+                                    silence.
+                                </p>
+                                <div class="flex justify-between">
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/schedule-icon.svg"
+                                            alt="icone duree de l'activitee"
+                                        />
+                                        <p>2h00</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/price-tag-icon.svg"
+                                            alt="icon de prix de l'activitee"
+                                        />
+                                        <p>80&#8364;</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/mini-location-icon.svg"
+                                            alt="icon de localisation de l'activitee"
+                                        />
+                                        <p>Gruissan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="card group relative aspect-[266/336] w-[266px] flex-shrink-0 overflow-hidden rounded-[15px] lg:aspect-[380/532] lg:w-full lg:flex-shrink"
+                        >
+                            <img
+                                class="h-full w-full object-cover"
+                                src="/assets/cards_canoe.png"
+                                alt="illustration de canoe"
+                            />
+                            <p
+                                class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
+                            >
+                                Canoe
+                            </p>
+                            <div
+                                class="description-card absolute bottom-3 left-1/2 w-[90%] max-w-[300px] -translate-x-1/2 translate-y-20 rounded-[18px] bg-white p-7 text-[#151E29] opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100"
+                            >
+                                <h3
+                                    style="
+                                        background-image: linear-gradient(
+                                            to right,
+                                            var(--color-custom-pink),
+                                            var(--color-custom-purple)
+                                        );
+                                    "
+                                    class="mb-[0.625rem] bg-clip-text text-lg text-[1.8125rem] leading-[44px] font-bold tracking-[2%] text-transparent"
+                                >
+                                    Canoë
+                                </h3>
+                                <p
+                                    class="mb-4 text-base leading-[21px] font-medium"
+                                >
+                                    Explorez les côtes en canoë ! Une activité
+                                    paisible pour découvrir la nature et
+                                    profiter d'une balade relaxante sur l'eau.
+                                </p>
+                                <div class="flex justify-between">
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/schedule-icon.svg"
+                                            alt="icone duree de l'activitee"
+                                        />
+                                        <p>1h30</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/price-tag-icon.svg"
+                                            alt="icon de prix de l'activitee"
+                                        />
+                                        <p>60&#8364;</p>
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            src="/assets/mini-location-icon.svg"
+                                            alt="icon de localisation de l'activitee"
+                                        />
+                                        <p>Gruissan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div
-                    class="cards mb-[1.1875rem] grid grid-cols-1 gap-[10px] sm:grid-cols-2 xl:mb-[2rem] xl:grid-cols-4 xl:gap-[40px]"
-                >
-                    <div
-                        class="card relative aspect-[266/336] w-full overflow-hidden rounded-[15px] lg:aspect-[380/532]"
-                    >
-                        <img
-                            class="h-full w-full object-cover"
-                            src="/assets/cards_wingFoil.png"
-                            alt="illustration de wind surf"
-                        />
-                        <p
-                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                        >
-                            Wing Foil
-                        </p>
-                    </div>
-                    <div
-                        class="cards relative aspect-[266/336] w-full overflow-hidden rounded-[15px] lg:aspect-[380/532]"
-                    >
-                        <img
-                            class="h-full w-full object-cover"
-                            src="/assets/cards_windSurf.png"
-                            alt="illustration de wind surf"
-                        />
-                        <p
-                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                        >
-                            Wing surf
-                        </p>
-                    </div>
-                    <div
-                        class="relative aspect-[266/336] w-full overflow-hidden rounded-[15px] lg:aspect-[380/532]"
-                    >
-                        <img
-                            class="h-full w-full object-cover"
-                            src="/assets/cards_voile.png"
-                            alt="illustration de voile"
-                        />
-                        <p
-                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                        >
-                            Voile
-                        </p>
-                    </div>
-                    <div
-                        class="relative aspect-[266/336] w-full overflow-hidden rounded-[15px] lg:aspect-[380/532]"
-                    >
-                        <img
-                            class="h-full w-full object-cover"
-                            src="/assets/cards_canoe.png"
-                            alt="illustration de canoe"
-                        />
-                        <p
-                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                        >
-                            Canoe
-                        </p>
-                    </div>
-                </div>
-                <!-- <div
-                    class="cards mb-[1.1875rem] flex gap-[10px] lg:mb-[2rem] lg:gap-[40px]"
-                >
-                    <div
-                        class="relative aspect-[266/336] w-[266px] overflow-hidden lg:aspect-[380/532] lg:w-[380px]"
-                    >
-                        <img
-                            src="/assets/cards_wingFoil.png"
-                            alt="illustration de wind surf"
-                        />
-                        <p
-                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                        >
-                            Wing Foil
-                        </p>
-                    </div>
-                    <div
-                        class="relative aspect-[266/336] w-[266px] overflow-hidden lg:aspect-[380/532] lg:w-[380px]"
-                    >
-                        <img
-                            src="/assets/cards_windSurf.png"
-                            alt="illustration de wind surf"
-                        />
-                        <p
-                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                        >
-                            Wing surf
-                        </p>
-                    </div>
-                    <div
-                        class="relative aspect-[266/336] w-[266px] overflow-hidden lg:aspect-[380/532] lg:w-[380px]"
-                    >
-                        <img
-                            src="/assets/cards_voile.png"
-                            alt="illustration de voile"
-                        />
-                        <p
-                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                        >
-                            Voile
-                        </p>
-                    </div>
-                    <div
-                        class="relative aspect-[266/336] w-[266px] overflow-hidden lg:aspect-[380/532] lg:w-[380px]"
-                    >
-                        <img
-                            src="/assets/cards_canoe.png"
-                            alt="illustration de canoe"
-                        />
-                        <p
-                            class="absolute bottom-1 left-[23px] text-[1.375rem] leading-[44px] font-bold text-white"
-                        >
-                            Canoe
-                        </p>
-                    </div>
-                </div> -->
                 <button
-                    class="mb-[3.375rem] flex items-center gap-2 rounded-[25px] bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white"
+                    class="flex cursor-pointer items-center gap-2 self-start rounded-[25px] border border-transparent bg-gradient-to-r from-[var(--color-pink)] to-[var(--color-purple)] px-5 py-[10px] text-white transition-colors duration-300 ease-in-out hover:border-[var(--color-pink)] hover:bg-transparent hover:from-[var(--color-pink)] hover:to-[var(--color-purple)] hover:bg-clip-text hover:text-transparent"
                 >
                     <p class="text-[0.9375rem] font-bold">
                         Découvrir le Pôle mer
@@ -311,10 +808,14 @@
                 </button>
             </section>
             <section
-                class="w-full bg-[url('/assets/base_activites.png')] bg-cover bg-center bg-no-repeat lg:h-auto lg:bg-[url('/assets/base_activites_desktop.png')]"
+                id="section-base-activites"
+                class="w-full bg-[url('/assets/base-gruissan-pole-mer.png')] bg-cover bg-center bg-no-repeat lg:h-auto"
+                style="
+                    background-image: url('<?php echo get_template_directory_uri(); ?>/dist/assets/base-gruissan-pole-mer.png');
+                "
             >
                 <div
-                    class="ml-[1.125rem] flex flex-col items-center pt-[4.375rem] pb-[4.8125rem] text-white lg:px-[12.1875rem] lg:pt-[9.75rem]"
+                    class="ml-[1.125rem] flex flex-col pt-[4.375rem] pb-[4.8125rem] text-white sm:items-start lg:px-[12.1875rem] lg:pt-[9.75rem]"
                 >
                     <h2
                         class="mb-[1.9375rem] px-5 text-center text-[2.5rem] font-bold uppercase lg:mb-[5.3125rem] lg:text-[4.6875rem] lg:leading-[80px] lg:tracking-[2%]"
@@ -322,44 +823,61 @@
                         nos bases d’activités
                     </h2>
 
-                    <div class="lg:mb-[5.3125rem] lg:max-w-[41.9375rem]">
-                        <ul
-                            class="mb-[2.25rem] ml-auto flex w-[782px] flex-col items-center gap-[33px] text-xl font-bold sm:flex-row lg:mb-[5.3125rem] lg:ml-0"
-                        >
-                            <li class="underline underline-offset-6">
+                    <div class="px-6 lg:mb-[5.3125rem] lg:max-w-[41.9375rem]">
+                        <ul id="activities-location" class="mb-20 flex gap-8">
+                            <li
+                                class="active relative w-fit flex-shrink-0 cursor-pointer whitespace-nowrap text-white after:absolute after:-bottom-2 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+                            >
                                 Gruissan Pôle Mer
                             </li>
-                            <li>Gruissan Pôle Étang</li>
-                            <li>Carry le Rouet</li>
-                            <li>Gorges de la Loue</li>
+
+                            <li
+                                class="relative w-fit flex-shrink-0 cursor-pointer whitespace-nowrap text-white after:absolute after:-bottom-2 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+                            >
+                                Gruissan Pôle Étang
+                            </li>
+
+                            <li
+                                class="relative w-fit flex-shrink-0 cursor-pointer whitespace-nowrap text-white after:absolute after:-bottom-2 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+                            >
+                                Carry le Rouet
+                            </li>
+                            <li
+                                class="relative w-fit flex-shrink-0 cursor-pointer whitespace-nowrap text-white after:absolute after:-bottom-2 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out hover:after:w-full"
+                            >
+                                Gorges de la Loue
+                            </li>
                         </ul>
                         <div class="sm:flex sm:flex-col sm:items-start">
                             <h3
+                                id="activitie-title"
                                 class="mb-3 text-center text-[1.3125rem] font-bold lg:self-start"
                             >
                                 Gruissan Pôle Mer
                             </h3>
                             <p
-                                class="mb-7 px-[6.5rem] text-center text-[1.0625rem] leading-[24px] sm:px-0 sm:text-start"
+                                id="activitie-description"
+                                class="mb-7 text-center text-[1.0625rem] leading-[24px] sm:text-start"
                             >
-                                Lorem ipsum dolor sit amet consectetur.
-                                Consequat volutpat in nisl elementum id. Donec
-                                cras nulla viverra sit tempus maecenas vehicula
-                                lacus. Egestas est cursus in sit pellentesque.
-                                Sit sem tristique habitasse tempus feugiat et.
+                                Découvrez Gruissan Pôle Mer, un espace dédié aux
+                                activités nautiques et à la découverte de la mer
+                                Méditerranée.
                             </p>
 
-                            <div class="flex items-center justify-center gap-4">
+                            <div
+                                class="flex flex-col items-center justify-center gap-4 sm:flex-row"
+                            >
                                 <button
-                                    class="flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
+                                    class="flex cursor-pointer items-center gap-2 rounded-[25px] border border-white bg-white px-5 py-[10px] tracking-[1%] text-[#151E29] transition-colors duration-300 ease-in-out hover:bg-transparent hover:text-white"
                                 >
-                                    <p class="text-[0.9375rem] font-bold">
+                                    <a class="text-[0.9375rem] font-bold">
                                         Découvrir le Pôle mer
-                                    </p>
-                                    <span>&#x2794;</span>
+                                    </a>
+                                    <span class="text-xl">&#x2794;</span>
                                 </button>
+
                                 <button
-                                    class="flex items-center gap-2 rounded-[25px] border bg-transparent px-5 py-[10px] text-white"
+                                    class="flex cursor-pointer items-center gap-2 rounded-[25px] border bg-transparent px-5 py-[10px] text-white transition-colors duration-300 ease-in-out hover:bg-white hover:text-[#151E29]"
                                 >
                                     <p class="text-[0.9375rem] font-bold">
                                         Voir sur la carte
@@ -382,7 +900,7 @@
                     alt="logo IRIS"
                 />
                 <div
-                    class="lg:mb-[6.5rem] lg:flex lg:w-full lg:items-start lg:justify-center lg:gap-[85px]"
+                    class="lg:mb-[2.875rem] lg:flex lg:w-full lg:items-start lg:justify-center lg:gap-[85px]"
                 >
                     <div class="flex flex-col items-center lg:items-start">
                         <div
@@ -401,17 +919,19 @@
                                     class="flex flex-col items-center lg:flex-row lg:gap-2"
                                 >
                                     <img
-                                        class="h-[22px] w-[17px] self-center"
+                                        class="h-[22px] w-[17px] self-center lg:self-start"
                                         src="/assets/location-icon.svg"
                                         alt="icon localisaton"
                                     />
-                                    <div class="text-center lg:mb-[0,9375rem]">
+                                    <div
+                                        class="mb-3 text-center lg:mb-[0,9375rem] lg:text-start"
+                                    >
                                         <p>4 rue du PNDF</p>
                                         <p>43000 Le Puy-en-Velay</p>
                                     </div>
                                 </div>
                                 <div
-                                    class="flex flex-col items-center gap-2 lg:mb-[0,9375rem] lg:flex-row"
+                                    class="flex flex-col items-center lg:mb-[0,9375rem] lg:flex-row lg:gap-2"
                                 >
                                     <img
                                         class="h-[22px] w-[17px]"
@@ -424,7 +944,7 @@
                             </div>
                         </div>
                         <button
-                            class="mb-[2.4375rem] flex items-center gap-2 rounded-[25px] bg-white px-5 py-[10px] text-[#151E29]"
+                            class="mb-[2.4375rem] flex cursor-pointer items-center gap-2 rounded-[25px] border border-white bg-white px-5 py-[10px] text-[#151E29] transition-colors duration-300 ease-in-out hover:bg-transparent hover:text-white"
                         >
                             <p class="text-[0.9375rem] font-bold">
                                 Nous contacter
@@ -459,6 +979,7 @@
                                 href="https://www.facebook.com/IRIS.Interactive"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                class="transition duration-300 ease-in-out hover:invert"
                             >
                                 <img
                                     src="/assets/facebook.svg"
@@ -469,6 +990,7 @@
                                 href="https://www.instagram.com/iris_interactive"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                class="transition duration-300 ease-in-out hover:invert"
                             >
                                 <img
                                     src="/assets/instagram.svg"
@@ -484,15 +1006,17 @@
                             Qui sommes nous ?
                         </h5>
                         <p class="text-center lg:text-start">
-                            Lorem ipsum dolor sit amet consectetur. Mauris et
-                            faucibus sed vulputate nulla ut eget urna.
+                            Plongez au cœur de l’aventure avec notre office de
+                            tourisme sportif ! Découvrez un large éventail
+                            d’activités nautiques, entre sensations fortes et
+                            détente au fil de l’eau.
                         </p>
                     </div>
                 </div>
-                <div class="flex flex-col items-center gap-4">
+                <div class="flex max-w-[54rem] flex-col items-center gap-4">
                     <p class="text-center">
-                        Plan du site - CGV - Politique de confidentialité
-                        -Mentions légales - Made with<span
+                        Plan du site - CGV - Politique de confidentialité -
+                        Mentions légales - Made with<span
                             class="inline-block px-1"
                             ><img
                                 src="/assets/heart.svg"

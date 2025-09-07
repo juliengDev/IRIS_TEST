@@ -1,42 +1,4 @@
-Bonsoir Bernard,
-
-Je vous fais un retour après avoir travaillé 8 h d’affilée sur le projet.
-
-Début : 15 h
-Fin : 23 h
-
-Les éléments mis en place :
-	•	Initialisation de l’environnement WordPress : ok
-	•	Création du thème WordPress : ok
-	•	Intégration du design system : police + variables CSS personnalisées : ok
-	•	Intégration de la maquette Figma (menu burger, version mobile et version desktop avec responsive design) : ok
-
-URL de la démo en ligne : https://enchanting-raindrop-7f0902.netlify.app/
-URL du dépôt Git : https://github.com/juliengDev/IRIS_TEST
-
-C’est une version statique, je n’ai pas pu intégrer de fonctionnalités dynamiques en dehors de l’interaction du menu en version mobile.
-
-Je n’ai pas pu non plus déployer le site sur WordPress ; je ne maîtrise pas encore l’environnement, il m’aurait fallu une ou deux heures supplémentaires, j’imagine.
-
-Je ne suis plus en mesure d’en faire davantage, j’ai épuisé ma charge mentale pour ce test 🙂, en espérant que vous apprécierez l’effort fourni.
-
-Je vous souhaite un bon week-end.
-
-Cordialement,
-
-
-
-
-
-   <img
-                        src="/assets/illustration-hero-wind.png"
-                        alt="illustration hero wind"
-                        class="absolute top-1/2 -right-26"
-                    />
-                    <img
-                        src="/assets/illustration-hero-catamaran.png"
-                        alt="illustration hero wind"
-                        class="absolute top-1/2 -left-123"
-                    />
-
-                    
+<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.36191 13.7238C10.884 13.7238 13.7238 10.884 13.7238 7.36191C13.7238 3.83981 10.884 1 7.36191 1C3.83981 1 1 3.83981 1 7.36191C1 10.884 3.83981 13.7238 7.36191 13.7238Z" stroke="#443383" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.2993 16.4711L12 13" stroke="#443383" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
